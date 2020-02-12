@@ -2,7 +2,7 @@
 
 :root{
 	--linear: linear-gradient(134.07deg, #48B1EC 29.28%, #107833 113.35%);
-	--main-gradient: linear-gradient(180deg, rgba(28, 137, 65, 0.83) 0%, #0C5D27 98.96%);
+	--main-gradient: linear-gradient(180deg, #419B5F 0%, #0C5D27 98.96%);
 	--sky: #48B1EC;
 	--grass: #0C5D27;
 	--cabernet: #7F2210;
@@ -75,8 +75,56 @@ body{
 .title{
 	
 }
+.main__title{
+	@include subtitle;
+}
 .container{
-	
+	max-width: 1400px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.gradient-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include bold;
+	color: #FFFFFF;
+	transition: .3s;
+	position: relative;
+	border-radius: 30px;
+	background: var(--grass);
+	span{
+		position: relative;
+		z-index: 2;
+	}
+	svg{
+		position: relative;
+		z-index: 2;
+		margin-left: 10px;
+	}
+	&:before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+		background: var(--main-gradient);
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: .3s;
+	}
+	@media screen and (min-width:1200px) {
+		&:hover{
+			&:before{
+				opacity: 0;
+			}
+		}
+		&:active{
+			color: #FFFFFF;
+			background: #3D7D52;
+		}
+	}
 }
 
 

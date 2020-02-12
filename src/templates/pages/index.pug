@@ -5,4 +5,148 @@ block variables
 
 block content
 	.main
+		.main-banner
+			.main-banner-info
+				.main-banner-info__subtext Коттеджный посёлок
+				.main-banner-info__title Аннинские просторы
+				.main-banner-info__text Земельные участки в Ломоносовском районе от 50 000 руб/сотка 
+					span от собственника со всеми коммуникациями
+				a.main-banner-info__btn.gradient-btn(href="#") 
+					span Записаться на экскурсию 
 		
+		.main-stock
+			.container
+				.main__title Акции и спецпредложения
+				.main-stock-tabs.tabs
+					.main-stock-tabs-prev.tabs-arr.tabs-prev
+						<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM21 4.5H1V3.5H21V4.5Z" fill="black"/>
+						</svg>
+					.main-stock-tabs-next.tabs-arr.tabs-next
+						<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="black"/>
+						</svg>
+					.main-stock-tabs-navigation
+						a.main-stock-tabs-navigation-item.tabs-navigation-item.active(href="#tab1")
+							.main-stock-tabs-navigation-item__img
+								img(src="assets/images/main-stock-promo1.png", alt="")
+							.main-stock-tabs-navigation-item__text Ипотека
+						a.main-stock-tabs-navigation-item.tabs-navigation-item(href="#tab2") 
+							.main-stock-tabs-navigation-item__img
+								img(src="assets/images/main-stock-promo2.png", alt="")
+							.main-stock-tabs-navigation-item__text Материнский капитал
+						a.main-stock-tabs-navigation-item.tabs-navigation-item(href="#tab3")
+							.main-stock-tabs-navigation-item__img
+								img(src="assets/images/main-stock-promo3.png", alt="")
+							.main-stock-tabs-navigation-item__text Скидки
+					.main-stock-tabs-tab.tabs-tab.active#tab1
+						.main-stock-tabs-tab-info
+							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
+							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+								span Узнать подробнее
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="11" fill="white"/>
+									<path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
+								</svg>
+						.main-stock-tabs-tab__img
+							img(src="assets/images/main-stock1.png", alt="")
+					.main-stock-tabs-tab.tabs-tab#tab2
+						.main-stock-tabs-tab-info
+							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
+							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+								span Узнать подробнее
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="11" fill="white"/>
+									<path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
+								</svg>
+						.main-stock-tabs-tab__img
+							img(src="assets/images/main-stock2.png", alt="")
+					.main-stock-tabs-tab.tabs-tab#tab3
+						.main-stock-tabs-tab-info
+							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
+							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+								span Узнать подробнее
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="11" fill="white"/>
+									<path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
+								</svg>
+						.main-stock-tabs-tab__img
+							img(src="assets/images/main-stock3.png", alt="")
+
+		.main-infrastructure
+			img.main-infrastructure-top(src="assets/images/img-infrastructure-top.png", alt="")
+			img.main-infrastructure-bot(src="assets/images/img-infrastructure-bot.png", alt="")
+			.container
+				.main__title Участки под дачное</br>строительство в 10 км от КАД
+				.main-infrastructure__text Коттеджный посёлок «Аннинские просторы» — это уютное и спокойное место с отличной экологией и доступностью всей необходимой инфраструктуры для комфортной семейной жизни. 
+				.main-infrastructure-items
+					.main-infrastructure-items-item
+						.main-infrastructure-items-item__img
+							img(src="assets/images/infrastructure-item1.svg", alt="")
+						.main-infrastructure-items-item__title Дороги
+						.main-infrastructure-items-item__text Построены внутренние</br>грунтовые дороги в посёлке
+					.main-infrastructure-items-item
+						.main-infrastructure-items-item__img
+							img(src="assets/images/infrastructure-item2.svg", alt="")
+						.main-infrastructure-items-item__title Электричество
+						.main-infrastructure-items-item__text Подведено к границам</br>каждого участка
+					.main-infrastructure-items-item
+						.main-infrastructure-items-item__img
+							img(src="assets/images/infrastructure-item3.svg", alt="")
+						.main-infrastructure-items-item__title Освещение и ограждение
+						.main-infrastructure-items-item__text Установлено уличное освещение и ограждение по периметру посёлка
+					.main-infrastructure-items-item
+						.main-infrastructure-items-item__img
+							img(src="assets/images/infrastructure-item4.svg", alt="")
+						.main-infrastructure-items-item__title Земля в собственности
+						.main-infrastructure-items-item__text Проведено их межевание и присвоены кадастровые номера.
+				a.main-infrastructure__btn.gradient-btn(href="#")
+					span Записаться на экскурсию
+		
+		.main-advantages
+			.container
+				.main-advantages-item
+					.main-advantages-item__img
+						img(src="assets/images/advantages-item1.jpg", alt="")
+					.main-advantages-item-info
+						.main-advantages-item-info__title Всё для детей
+						.main-advantages-item-info__subtitle Два детских сада
+						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
+						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
+						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
+						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
+						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
+						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
+						.main-advantages-item-info__subtitle ДК «Разбегаево»
+						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
+				.main-advantages-item
+					.main-advantages-item__img
+						img(src="assets/images/advantages-item1.jpg", alt="")
+					.main-advantages-item-info
+						.main-advantages-item-info__title Всё для детей
+						.main-advantages-item-info__subtitle Два детских сада
+						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
+						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
+						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
+						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
+						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
+						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
+						.main-advantages-item-info__subtitle ДК «Разбегаево»
+						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
+				.main-advantages-item
+					.main-advantages-item__img
+						img(src="assets/images/advantages-item1.jpg", alt="")
+					.main-advantages-item-info
+						.main-advantages-item-info__title Всё для детей
+						.main-advantages-item-info__subtitle Два детских сада
+						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
+						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
+						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
+						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
+						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
+						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
+						.main-advantages-item-info__subtitle ДК «Разбегаево»
+						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
