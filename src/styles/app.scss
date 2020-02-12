@@ -1,0 +1,87 @@
+@import 'common/normalize';
+
+:root{
+	--linear: linear-gradient(134.07deg, #48B1EC 29.28%, #107833 113.35%);
+	--main-gradient: linear-gradient(180deg, rgba(28, 137, 65, 0.83) 0%, #0C5D27 98.96%);
+	--sky: #48B1EC;
+	--grass: #0C5D27;
+	--cabernet: #7F2210;
+	--black: rgba(0, 0, 0, 0.75);
+	--white: #FDFDFD;
+	--link: #47657A;
+}
+html,
+body{
+	display: block;
+	color: var(--black);
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.content {
+	flex: 1;
+	position: relative;
+}
+
+@mixin main_title {
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 72px;
+	line-height: 84px;
+};
+@mixin subtitle {
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 36px;
+	line-height: 42px;
+
+};
+@mixin text_subtitle {
+	font-family: 'Tenor Sans', sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+};
+@mixin text {
+	font-size: 16px;
+	line-height: 150%;
+};
+@mixin text_medium {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+};
+@mixin bold {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+};
+@mixin enlarged {
+	font-size: 18px;
+	line-height: 150%;
+};
+@mixin small_text {
+	font-size: 14px;
+	line-height: 17px;
+};
+@mixin tabs {
+	font-size: 12px;
+	line-height: 15px;
+};
+.title{
+	
+}
+.container{
+	
+}
+
+
+@import 'common/adaptive';
+@import 'common/header';
+@import 'common/footer';
+@import 'pages/index';
+
