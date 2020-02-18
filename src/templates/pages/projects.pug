@@ -1,0 +1,43 @@
+extends ../template
+
+block variables
+	- var title = 'Проекты'
+
+block content
+	.projects
+		.mycontainer
+			.title Проекты
+			.projects__span 11 альбомов
+			.projects-filter
+				.projects-filter__item.active Построенные объекты
+				.projects-filter__item Строящиеся объекты
+			.projects-items
+				-for(var i = 0; i < 6; i++)
+					a.projects-items-item(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+						.projects-items-item__img
+							img(src="assets/images/project-item.jpg", alt="")
+							.projects-items-item__img-btn 
+								<svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+								</svg>
+								| Посмотреть
+						.projects-items-item-info
+							.projects-items-item__title Дом Atmosphere. 250 кв.м.
+							.projects-items-item__text Место строительства: Ленинградская область, пос. Ропша 
+						div(style="display:none")
+							a(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+							a(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+							a(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+							a(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+							a(href="assets/images/project-item.jpg" data-fancybox="gallery"+i)
+			.projects-pagination
+				.projects-pagination__prev.disabled
+				.projects-pagination__item.active 1
+				a.projects-pagination__item(href="#") 2
+				a.projects-pagination__item(href="#") 3
+				a.projects-pagination__item(href="#") 4
+				.projects-pagination__item.item__more
+				a.projects-pagination__item(href="#") 12
+				a.projects-pagination__next(href="#")
+
+	

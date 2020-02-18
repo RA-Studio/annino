@@ -8,14 +8,14 @@ block content
 		.main-banner
 			.main-banner-info
 				.main-banner-info__subtext Коттеджный посёлок
-				.main-banner-info__title Аннинские просторы
+				h1.main-banner-info__title Аннинские просторы
 				.main-banner-info__text Земельные участки в Ломоносовском районе от 50 000 руб/сотка 
 					span от собственника со всеми коммуникациями
-				a.main-banner-info__btn.gradient-btn(href="#") 
+				a.main-banner-info__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-phone", "touch": false}' href="javascript:;") 
 					span Записаться на экскурсию 
 		
 		.main-stock
-			.container
+			.mycontainer
 				.main__title Акции и спецпредложения
 				.main-stock-tabs.tabs
 					.main-stock-tabs-prev.tabs-arr.tabs-prev
@@ -43,7 +43,7 @@ block content
 						.main-stock-tabs-tab-info
 							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
 							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
-							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="stockpage.html")
 								span Узнать подробнее
 								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="11" cy="11" r="11" fill="white"/>
@@ -55,7 +55,7 @@ block content
 						.main-stock-tabs-tab-info
 							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
 							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
-							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="stockpage.html")
 								span Узнать подробнее
 								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="11" cy="11" r="11" fill="white"/>
@@ -67,7 +67,7 @@ block content
 						.main-stock-tabs-tab-info
 							.main-stock-tabs-tab-info__title Ипотека? Да-да, конечно, оформляем
 							.main-stock-tabs-tab-info__text Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. 
-							a.main-stock-tabs-tab-info__btn.gradient-btn(href="#")
+							a.main-stock-tabs-tab-info__btn.gradient-btn(href="stockpage.html")
 								span Узнать подробнее
 								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="11" cy="11" r="11" fill="white"/>
@@ -79,7 +79,7 @@ block content
 		.main-infrastructure
 			img.main-infrastructure-top(src="assets/images/img-infrastructure-top.png", alt="")
 			img.main-infrastructure-bot(src="assets/images/img-infrastructure-bot.png", alt="")
-			.container
+			.mycontainer
 				.main__title Участки под дачное</br>строительство в 10 км от КАД
 				.main-infrastructure__text Коттеджный посёлок «Аннинские просторы» — это уютное и спокойное место с отличной экологией и доступностью всей необходимой инфраструктуры для комфортной семейной жизни. 
 				.main-infrastructure-items
@@ -103,50 +103,167 @@ block content
 							img(src="assets/images/infrastructure-item4.svg", alt="")
 						.main-infrastructure-items-item__title Земля в собственности
 						.main-infrastructure-items-item__text Проведено их межевание и присвоены кадастровые номера.
-				a.main-infrastructure__btn.gradient-btn(href="#")
+				a.main-infrastructure__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-phone", "touch": false}' href="javascript:;")
 					span Записаться на экскурсию
 		
 		.main-advantages
-			.container
-				.main-advantages-item
-					.main-advantages-item__img
-						img(src="assets/images/advantages-item1.jpg", alt="")
-					.main-advantages-item-info
-						.main-advantages-item-info__title Всё для детей
-						.main-advantages-item-info__subtitle Два детских сада
-						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
-						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
-						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
-						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
-						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
-						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
-						.main-advantages-item-info__subtitle ДК «Разбегаево»
-						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
-				.main-advantages-item
-					.main-advantages-item__img
-						img(src="assets/images/advantages-item1.jpg", alt="")
-					.main-advantages-item-info
-						.main-advantages-item-info__title Всё для детей
-						.main-advantages-item-info__subtitle Два детских сада
-						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
-						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
-						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
-						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
-						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
-						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
-						.main-advantages-item-info__subtitle ДК «Разбегаево»
-						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
-				.main-advantages-item
-					.main-advantages-item__img
-						img(src="assets/images/advantages-item1.jpg", alt="")
-					.main-advantages-item-info
-						.main-advantages-item-info__title Всё для детей
-						.main-advantages-item-info__subtitle Два детских сада
-						.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
-						.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
-						.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
-						.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
-						.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
-						.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
-						.main-advantages-item-info__subtitle ДК «Разбегаево»
-						.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
+			img.main-advantages__img(src="assets/images/advantages-img.png", alt="")
+			.main-advantages-wrap
+				.main-advantages-wrap-content
+					.mycontainer
+						.main-advantages-item
+							.main-advantages-item__img
+								img(src="assets/images/advantages-item1.jpg", alt="")
+							.main-advantages-item-info
+								.main-advantages-item-info__title Всё для детей
+								.main-advantages-item-info__subtitle Два детских сада
+								.main-advantages-item-info__item Детский сад No26 (п. Аннино, ул. Весенняя)
+								.main-advantages-item-info__item Детский сад No15 (д. Разбегаево, 51А)
+								.main-advantages-item-info__subtitle МОУ Аннинская средняя школа
+								.main-advantages-item-info__item Расположена в посёлке Аннино (ул. Садовая, 2)
+								.main-advantages-item-info__subtitle Молодежный культурно-досуговый комплекс
+								.main-advantages-item-info__item Посёлок Аннино, улица Садовая, 16
+								.main-advantages-item-info__subtitle ДК «Разбегаево»
+								.main-advantages-item-info__item Деревня Разбегаево, 51а, во дворах
+				.main-advantages-wrap-content
+					.mycontainer
+						.main-advantages-item
+							.main-advantages-item__img
+								img(src="assets/images/advantages-item2.png", alt="")
+							.main-advantages-item-info
+								.main-advantages-item-info__title Всё для спорта
+								.main-advantages-item-info__subtitle МБУ Центр физической культуры, спорта и здоровья
+								.main-advantages-item-info__item Посёлок Аннино, ул. Садовая, 18
+								.main-advantages-item-info__subtitle Футбольное поле
+								.main-advantages-item-info__item Посёлок Аннино,во дворе Центральной улицы
+								.main-advantages-item-info__subtitle Спортивно-развлекательный центр «Скейтпарк Аннино»
+								.main-advantages-item-info__item Там же, во дворе Центральной улицы, расположен скейтпарк
+								.main-advantages-item-info__subtitle Спортивный комплекс
+								.main-advantages-item-info__item Находится в 8 км в деревне Горбунки
+				.main-advantages-wrap-content
+					.mycontainer
+						.main-advantages-item
+							.main-advantages-item__img
+								img(src="assets/images/advantages-item3.png", alt="")
+							.main-advantages-item-info
+								.main-advantages-item-info__title А также товары, услуги и медицина
+								.main-advantages-item-info__subtitle Три продуктовых универмага в шаговой доступности
+								.main-advantages-item-info__item Магазин Магнит (п. Аннино, ул. 10-ой Пятилетки, 2А)
+								.main-advantages-item-info__item Магазин Магнит (д. Разбегаево, 1-й микрорайон, здание №1)
+								.main-advantages-item-info__item Универсам Пятёрочка (п. Аннино, ул. 10-ой Пятилетки, 4А)
+								.main-advantages-item-info__subtitle Отделения «Сбербанка», «Почты России» и «МФЦ»
+								.main-advantages-item-info__item Почта России (п. Аннино, ул. Садовая, 10)
+								.main-advantages-item-info__item Почта России (д. Разбегаево)
+								.main-advantages-item-info__item Сбербанк (п. Аннино, ул. Садовая, 10)
+								.main-advantages-item-info__item МФЦ (п. Аннино, ул. 10-й Пятилетки, 1А)
+								.main-advantages-item-info__subtitle Поликлиника
+								.main-advantages-item-info__item Поликлиника (п. Аннино, ул. Садовая, 12)
+				.main-advantages-wrap-content
+					.mycontainer
+						.main-advantages-item
+							.main-advantages-item__img
+								img(src="assets/images/advantages-item4.png", alt="")
+							.main-advantages-item-info
+								.main-advantages-item-info__title Отдых и развлечения
+								.main-advantages-item-info__subtitle Горнолыжный курорт «Туутари Парк»
+								.main-advantages-item-info__item Курорт располагает развлекательными возможностями в летний и зимний сезон: ресторан, лыжные спуски, пейнтбол, прокат велосипедов, парапланов.
+								.main-advantages-item-info__subtitle Музеи и памятники архитектуры
+								.main-advantages-item-info__item Петергоф — исторический дворцово-парковый ансамбль на южном берегу Финского залива
+								.main-advantages-item-info__item Стрельна — старейший петербургский пригород, где расположены дворцы и уютный парк
+								.main-advantages-item-info__subtitle Царская рыбалка
+								.main-advantages-item-info__item Центр рыболовства «Рыбные пруды» — благоустроенная зона отдыха, расположенная недалеко от города. Имеется два зарыбленных водоема — большой для ловли карпа и малый для ловли форели
+								.main-advantages-item-info__subtitle Аэродром «Гостилицы»
+								.main-advantages-item-info__item В любое время года на территории аэродрома собираются поклонники малой авиации, обучаются пилоты, проводятся соревнования и праздники
+
+		.main-about-wrap 
+			.main-about
+				img(src="assets/images/img-infrastructure-top.png", alt="")
+				.mycontainer
+					.main__title Дачное некоммерческое</br>партнёрство сделает вашу</br>жизнь спокойной
+					.main-about__price За <span>3000</span> руб/месяц
+					.main-infrastructure-items
+						.main-infrastructure-items-item
+							.main-infrastructure-items-item__img
+								img(src="assets/images/infrastructure-item5.svg", alt="")
+							.main-infrastructure-items-item__title Круглосуточная охрана
+							.main-infrastructure-items-item__text Никаких посторонних</br>на территории
+						.main-infrastructure-items-item
+							.main-infrastructure-items-item__img
+								img(src="assets/images/infrastructure-item6.svg", alt="")
+							.main-infrastructure-items-item__title Уборка территории
+							.main-infrastructure-items-item__text От снега, мусора</br>и травы
+						.main-infrastructure-items-item
+							.main-infrastructure-items-item__img
+								img(src="assets/images/infrastructure-item7.svg", alt="")
+							.main-infrastructure-items-item__title Решение проблем
+							.main-infrastructure-items-item__text Ремонт дорог и других</br>коммуникаций
+						.main-infrastructure-items-item
+							.main-infrastructure-items-item__img
+								img(src="assets/images/infrastructure-item8.svg", alt="")
+							.main-infrastructure-items-item__title Вывоз мусора
+							.main-infrastructure-items-item__text Никаких свалок и</br>неприятного запаха
+					a.main-infrastructure__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-message", "touch": false}' href="javascript:;")
+						span Записаться на просмотр участка
+
+			.main-genplan
+				img.main-genplan__bot(src="assets/images/about-bot.png", alt="")
+				img.main-genplan__img(src="assets/images/genplan-img.png", alt="")
+				.mycontainer
+					.main__title Выберите свой участок</br>в “Аннинских просторах”
+					img(src="assets/images/genplan.jpg", alt="")
+
+		.main-location
+			img(src="assets/images/location-img.png", alt="")
+			.mycontainer
+				.main__title Расположение посёлка
+				.main-location-content
+					.main-location-content-info
+						.main-location-content-info-tabs
+							.main-location-content-info-tabs__item.active Автомобиль
+							.main-location-content-info-tabs__item Общественный транспорт
+						.main-location-content-info__input
+							input(id="suggest" type="text" placeholder="Введите местоположение" autocomplete="off")
+						
+					.main-location-content-map#map
+				
+		.main-perspective
+			img(src="assets/images/perspective-img.png", alt="")
+			.mycontainer
+				.main__title Посёлок и его</br>перспективы
+				.main-infrastructure__text Рядом с посёлком нет никаких опасных предприятий. Вокруг него поля, чуть дальше располагается лес, а в 8 км Шинкарский пруд.Поэтому жизнь здесь благоприятно сказывается на здоровье. Особенно на здоровье детей, которые могут абсолютно безопасно бегать и играть на улице.Вы можете разбить свой сад, с разными видами деревьев, цветов и кустарников. Посадить небольшой огородик, устроить теплицу. Или засадить весь участок газоном. Будьте уверены, на этой земле всё растёт отлично.
+				.main-perspective-items
+					.main-perspective-items-item
+						.main-perspective-items-item__img
+							img(src="assets/images/perspective-item1.jpg", alt="")
+						.main-perspective-items-item__title Зоны для спорта и отдыха
+						.main-perspective-items-item__text В посёлке будут построены детская и спортивная площадки, а также зона отдыха.
+					.main-perspective-items-item
+						.main-perspective-items-item__img
+							img(src="assets/images/perspective-item2.jpg", alt="")
+						.main-perspective-items-item__title Красивая ограда
+						.main-perspective-items-item__text Красивое ограждение вдоль границы посёлка.
+					.main-perspective-items-item
+						.main-perspective-items-item__img
+							img(src="assets/images/perspective-item3.jpg", alt="")
+						.main-perspective-items-item__title Парковка для гостей
+						.main-perspective-items-item__text Отдельная зона паркинга для гостей поселка.
+
+		.main-partners
+			.mycontainer
+				.main__title Нам доверяют
+				.main-partners-slider
+					.main-partners-slider-item
+						img(src="assets/images/partners1.jpg", alt="")
+					.main-partners-slider-item
+						img(src="assets/images/partners2.jpg", alt="")
+					.main-partners-slider-item
+						img(src="assets/images/partners3.jpg", alt="")
+					.main-partners-slider-item
+						img(src="assets/images/partners4.jpg", alt="")
+					.main-partners-slider-item
+						img(src="assets/images/partners1.jpg", alt="")
+
+		#form-message(style="display:none")
+			include ../common/form-message.pug
+		#form-phone(style="display:none")
+			include ../common/form-phone.pug

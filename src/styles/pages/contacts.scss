@@ -1,0 +1,41 @@
+.contacts{
+	> img{
+		position: absolute;
+		right: 0;
+		top: -170px;
+	}
+	.mycontainer{
+		position: relative;
+		z-index: 2;
+	}
+	&__title{
+		@include text_subtitle;
+		margin-bottom: 10px;
+	}
+	&__text{
+		margin-bottom: 20px;
+	}
+	&__tel{
+		margin-bottom: 20px;
+		@include bold;
+		color: var(--link);
+	}
+	&-socials{
+		display: flex;
+		align-items: center;
+		margin-top: -10px;
+		margin-left: -10px;
+		margin-bottom: 30px;
+		&__item{
+			padding: 10px;
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__map{
+		height: 500px;
+		margin-bottom: 100px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}

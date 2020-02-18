@@ -1,0 +1,108 @@
+extends ../template
+
+block variables
+	- var title = 'Страница участка'
+
+block content
+	.plot
+		img(src="assets/images/plot-img.png", alt="")
+		.mycontainer
+			h1.title Участок 13
+			.plot-content
+				.plot-content-info
+					.plot-content-info__square
+						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.5 7.5V17.5H17.5V7.5H7.5ZM5 5H20V20H5V5ZM5 0H7.5V3.75H5V0ZM5 21.25H7.5V25H5V21.25ZM0 5H3.75V7.5H0V5ZM0 17.5H3.75V20H0V17.5ZM21.25 5H25V7.5H21.25V5ZM21.25 17.5H25V20H21.25V17.5ZM17.5 0H20V3.75H17.5V0ZM17.5 21.25H20V25H17.5V21.25Z" fill="url(#paint0_linear)"/>
+							<defs>
+							<linearGradient id="paint0_linear" x1="12.5" y1="0" x2="12.5" y2="25" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#419B5F"/>
+							<stop offset="0.989583" stop-color="#0C5D27"/>
+							</linearGradient>
+							</defs>
+						</svg>
+						| 6 соток
+					.plot-content-info__price
+						<svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.394 20V16.1905H0V14.3697H2.394V11.8768H0V9.7479H2.394V0H7.56723C9.9704 0 11.7498 0.494865 12.9056 1.48459C14.0796 2.47432 14.6667 3.91223 14.6667 5.79832C14.6667 7.70308 14.0338 9.19701 12.768 10.2801C11.5022 11.3445 9.64019 11.8768 7.18199 11.8768H4.87054V14.3697H9.41088V16.1905H4.87054V20H2.394ZM4.87054 9.7479H6.82427C8.49364 9.7479 9.78695 9.46779 10.7042 8.90756C11.6398 8.34734 12.1076 7.33894 12.1076 5.88235C12.1076 4.61251 11.7223 3.66947 10.9518 3.05322C10.1814 2.43698 8.97978 2.12885 7.34709 2.12885H4.87054V9.7479Z" fill="url(#paint0_linear)"/>
+							<defs>
+							<linearGradient id="paint0_linear" x1="7.33333" y1="0" x2="7.33333" y2="20" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#419B5F"/>
+							<stop offset="0.989583" stop-color="#0C5D27"/>
+							</linearGradient>
+							</defs>
+						</svg>
+						span.plot-content-info__price-old 900 000 руб.
+						span.plot-content-info__price-new 1 300 000 руб.
+						span.plot-content-info__price-default 1 300 000 руб.
+					.plot-content-info-row
+						span Кадастровый номер
+						span 47:14:0501002:1080
+					.plot-content-info-row
+						span Дороги
+						span Есть
+					.plot-content-info-row
+						span Газоснабжение
+						span Есть
+					.plot-content-info-row
+						span Водоснабжение
+						span Есть
+					.plot-content-info-row
+						span Электричество 15 кВт
+						span Есть
+					.plot-content-info-row
+						span Канализация
+						span Локальная
+					.plot-content-info-row
+						span Охрана
+						span Есть
+					a.plot-content-info__btn.gradient-btn(href="#") 
+						span Записаться на просмотр
+				.plot-content-plan
+					.plot-content-plan__title Пример планировки участка
+					.plot-content-plan__img
+						img(src="assets/images/plot-plan.jpg", alt="")
+			.plot-calc
+				.plot-calc__title Калькулятор беспроцентной рассрочки
+				.plot-calc-content
+					.plot-calc-content-col
+						.plot-calc-content-col__text Рассрочка без % до 6 мес., остальные 6 мес. — под 12% годовых.
+						.plot-calc-content-col__text(style="margin-bottom: 20px")
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.57143 17.8929V0.446429C3.57143 0.199554 3.37143 0 3.125 0C2.87857 0 2.67857 0.199554 2.67857 0.446429V17.8929C1.16652 18.1107 0 19.4112 0 20.9821C0 22.7049 1.40179 24.1071 3.125 24.1071C4.84821 24.1071 6.25 22.7049 6.25 20.9821C6.25 19.4112 5.08348 18.1107 3.57143 17.8929ZM3.125 23.2143C1.8942 23.2143 0.892857 22.2129 0.892857 20.9821C0.892857 19.7513 1.8942 18.75 3.125 18.75C4.3558 18.75 5.35714 19.7513 5.35714 20.9821C5.35714 22.2129 4.3558 23.2143 3.125 23.2143Z" fill="black"/>
+								<path d="M12.9462 8.79241V0.446429C12.9462 0.199554 12.7462 0 12.4998 0C12.2533 0 12.0533 0.199554 12.0533 0.446429V8.76429C10.4453 8.94107 9.18994 10.3071 9.18994 11.9612C9.18994 13.6152 10.4453 14.9812 12.0533 15.158V23.6607C12.0533 23.9076 12.2533 24.1071 12.4998 24.1071C12.7462 24.1071 12.9462 23.9076 12.9462 23.6607V15.1299C14.464 14.8723 15.6248 13.5513 15.6248 11.9612C15.6248 10.371 14.464 9.05 12.9462 8.79241ZM12.4074 14.2857C11.1257 14.2857 10.0828 13.2429 10.0828 11.9612C10.0828 10.6795 11.1252 9.63661 12.4074 9.63661C13.6895 9.63661 14.7319 10.6795 14.7319 11.9612C14.7319 13.2429 13.689 14.2857 12.4074 14.2857Z" fill="black"/>
+								<path d="M25 3.125C25 1.40223 23.5982 0 21.875 0C20.1518 0 18.75 1.40223 18.75 3.125C18.75 4.69598 19.9165 5.99643 21.4286 6.21429V23.6607C21.4286 23.9076 21.6286 24.1071 21.875 24.1071C22.1214 24.1071 22.3214 23.9076 22.3214 23.6607V6.21429C23.8335 5.99643 25 4.69598 25 3.125ZM21.875 5.35714C20.6442 5.35714 19.6429 4.3558 19.6429 3.125C19.6429 1.8942 20.6442 0.892857 21.875 0.892857C23.1058 0.892857 24.1071 1.8942 24.1071 3.125C24.1071 4.3558 23.1058 5.35714 21.875 5.35714Z" fill="black"/>
+							</svg>
+							| Двигайте ползунки в калькуляторе,</br>чтобы узнать свои условия рассрочки.
+						label.plot-calc-content-col__text 
+							input(type="checkbox")
+							span
+							| С учётом инфраструктурных</br>платежей
+						.plot-calc-content-col-bot
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.4827 9.65514H11.0345V6.20687C11.0345 5.82549 10.7255 5.51721 10.3448 5.51721C9.96411 5.51721 9.65514 5.82549 9.65514 6.20687V9.65514H6.20687C5.82618 9.65514 5.51721 9.96342 5.51721 10.3448C5.51721 10.7262 5.82618 11.0345 6.20687 11.0345H9.65514V14.4827C9.65514 14.8641 9.96411 15.1724 10.3448 15.1724C10.7255 15.1724 11.0345 14.8641 11.0345 14.4827V11.0345H14.4827C14.8634 11.0345 15.1724 10.7262 15.1724 10.3448C15.1724 9.96342 14.8634 9.65514 14.4827 9.65514Z" fill="#0C5D27"/>
+								<path d="M33.7932 9.65515H25.5173C25.1366 9.65515 24.8276 9.96343 24.8276 10.3448C24.8276 10.7262 25.1366 11.0345 25.5173 11.0345H33.7932C34.1738 11.0345 34.4828 10.7262 34.4828 10.3448C34.4828 9.96343 34.1738 9.65515 33.7932 9.65515Z" fill="#0C5D27"/>
+								<path d="M20.6897 0H19.3103H0V19.3103V20.6897V40H19.3103H20.6897H40V20.6897V19.3103V0H20.6897ZM1.37931 1.37931H19.3103V19.3103H1.37931V1.37931ZM1.37931 38.6207V20.6897H19.3103V38.6207H1.37931ZM38.6207 38.6207H20.6897V20.6897H38.6207V38.6207ZM20.6897 19.3103V1.37931H38.6207V19.3103H20.6897Z" fill="#0C5D27"/>
+								<path d="M25.5173 32.4138H33.7932C34.1738 32.4138 34.4828 32.1055 34.4828 31.7241C34.4828 31.3428 34.1738 31.0345 33.7932 31.0345H25.5173C25.1366 31.0345 24.8276 31.3428 24.8276 31.7241C24.8276 32.1055 25.1366 32.4138 25.5173 32.4138Z" fill="#0C5D27"/>
+								<path d="M25.5173 28.2759H33.7932C34.1738 28.2759 34.4828 27.9676 34.4828 27.5862C34.4828 27.2048 34.1738 26.8965 33.7932 26.8965H25.5173C25.1366 26.8965 24.8276 27.2048 24.8276 27.5862C24.8276 27.9676 25.1366 28.2759 25.5173 28.2759Z" fill="#0C5D27"/>
+								<path d="M14.2807 25.7194C14.011 25.4497 13.5752 25.4497 13.3055 25.7194L10.3448 28.6801L7.38414 25.7194C7.11448 25.4497 6.67862 25.4497 6.40897 25.7194C6.13931 25.989 6.13931 26.4249 6.40897 26.6946L9.36966 29.6553L6.40897 32.6159C6.13931 32.8856 6.13931 33.3215 6.40897 33.5911C6.54345 33.7256 6.72 33.7932 6.89655 33.7932C7.07311 33.7932 7.24966 33.7256 7.38414 33.5911L10.3448 30.6304L13.3055 33.5911C13.44 33.7256 13.6166 33.7932 13.7931 33.7932C13.9697 33.7932 14.1462 33.7256 14.2807 33.5911C14.5503 33.3215 14.5503 32.8856 14.2807 32.6159L11.32 29.6553L14.2807 26.6946C14.5503 26.4249 14.5503 25.989 14.2807 25.7194Z" fill="#0C5D27"/>
+							</svg>
+							.plot-calc-content-col-bot-col
+								.plot-calc-content-col-bot-col__monthly 67 375 руб.
+								.plot-calc-content-col-bot-col__text Ежемесячный платёж
+							.plot-calc-content-col-bot-col
+								.plot-calc-content-col-bot-col__daily 2 173 руб.
+								.plot-calc-content-col-bot-col__text Ежедневный платёж
+					.plot-calc-content-sliders
+						label.plot-calc-content-sliders-item
+							.plot-calc-content-sliders__title Первоначальный взнос, руб
+							input.plot-calc-content-sliders__input(type="tel" value="1" id="initial" data-min="1" data-max="1300000" name="input-vol")
+							input.plot-calc-content-sliders__range(type="range" id="initialRange" data-min="1" data-max="1300000" data-from="1000000" data-hide-min-max="true" data-hide-from-to="true")
+						label.plot-calc-content-sliders-item
+							.plot-calc-content-sliders__title Период рассрочки, мес
+							input.plot-calc-content-sliders__input(type="tel" value="1" id="time" data-min="1" data-max="12" name="input-vol")
+							input.plot-calc-content-sliders__range(type="range" id="timeRange" data-min="1" data-max="12" data-from="9" data-hide-min-max="true" data-hide-from-to="true")
+						.plot-calc-content-sliders__btn.gradient-btn
+							span Записаться на просмотр
+
+					.plot-calc-content__img
+						img(src="assets/images/plot-calc.png", alt="")

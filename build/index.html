@@ -11,18 +11,21 @@
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Tenor+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/scripts/ionRangeSlider/ionRangeSlider.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.min.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="overlay"></div>
       <header class="header"><a class="header__logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="#">Как купить</a><a class="header-menu__item red" href="#">Акции</a></div>
+        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="#">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
         <div class="header-info">
           <div class="header-info-wrap"><a class="header-info__tel" href="tel:+78121234567">+7 (812) 123-45-67</a>
-            <div class="header-info__work close">Закрыто. Откроемся в 10.00</div>
+            <div class="header-info__work close-work">Закрыто. Откроемся в 10.00</div>
           </div>
           <div class="header-info__burger"><svg width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="2" y1="2" x2="30" y2="2" stroke="black" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
@@ -35,15 +38,15 @@
         <div class="header-popup-top">
           <div class="header-info">
             <div class="header-info-wrap"><a class="header-info__tel" href="tel:+78121234567">+7 (812) 123-45-67</a>
-              <div class="header-info__work close">Закрыто. Откроемся в 10.00</div>
-            </div><a class="header-popup-top__btn" href="#">Связаться с нами</a>
+              <div class="header-info__work close-work">Закрыто. Откроемся в 10.00</div>
+            </div><a class="header-popup-top__btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-phone&quot;, &quot;touch&quot;: false}" href="javascript:;">Связаться с нами</a>
           </div>
           <div class="header-info__burger"><svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.8106 13.6035L24.2071 24M34.6035 34.3965L24.2071 24M24.2071 24L34.8106 13.3965M24.2071 24L13.6035 34.6035" stroke="black" stroke-opacity="0.75" stroke-width="4" stroke-linecap="round"/>
 </svg>
           </div>
         </div>
-        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Как купить</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="#">Типовые проекты</a><a class="header-popup-menu__item" href="#">Новости и акции</a><a class="header-popup-menu__item" href="#">Контакты</a></div>
+        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Как купить</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
         <div class="header-popup-bot">
           <div class="header-popup-bot-item"><a href="#">Политика конфиденциальности</a></div>
           <div class="header-popup-bot-item">Разработано в <a href="ra-studio.ru">RA-Studio</a></div>
@@ -56,17 +59,20 @@
 </svg></a></div>
         </div>
       </div>
+      <div class="breadcrumbs"><a class="breadcrumbs__item" href="index.html">Главная</a><span>/</span>
+        <div class="breadcrumbs__item">Контакты</div>
+      </div>
       <div class="content">
         <div class="main">
           <div class="main-banner">
             <div class="main-banner-info">
               <div class="main-banner-info__subtext">Коттеджный посёлок</div>
-              <div class="main-banner-info__title">Аннинские просторы</div>
-              <div class="main-banner-info__text">Земельные участки в Ломоносовском районе от 50 000 руб/сотка <span>от собственника со всеми коммуникациями</span></div><a class="main-banner-info__btn gradient-btn" href="#"> <span>Записаться на экскурсию </span></a>
+              <h1 class="main-banner-info__title">Аннинские просторы</h1>
+              <div class="main-banner-info__text">Земельные участки в Ломоносовском районе от 50 000 руб/сотка <span>от собственника со всеми коммуникациями</span></div><a class="main-banner-info__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-phone&quot;, &quot;touch&quot;: false}" href="javascript:;"> <span>Записаться на экскурсию </span></a>
             </div>
           </div>
           <div class="main-stock">
-            <div class="container">
+            <div class="mycontainer">
               <div class="main__title">Акции и спецпредложения</div>
               <div class="main-stock-tabs tabs">
                 <div class="main-stock-tabs-prev tabs-arr tabs-prev"><svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +93,7 @@
                 <div class="main-stock-tabs-tab tabs-tab active" id="tab1">
                   <div class="main-stock-tabs-tab-info">
                     <div class="main-stock-tabs-tab-info__title">Ипотека? Да-да, конечно, оформляем</div>
-                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="#"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="stockpage.html"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="11" cy="11" r="11" fill="white"/>
 <path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
 </svg></a>
@@ -97,7 +103,7 @@
                 <div class="main-stock-tabs-tab tabs-tab" id="tab2">
                   <div class="main-stock-tabs-tab-info">
                     <div class="main-stock-tabs-tab-info__title">Ипотека? Да-да, конечно, оформляем</div>
-                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="#"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="stockpage.html"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="11" cy="11" r="11" fill="white"/>
 <path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
 </svg></a>
@@ -107,7 +113,7 @@
                 <div class="main-stock-tabs-tab tabs-tab" id="tab3">
                   <div class="main-stock-tabs-tab-info">
                     <div class="main-stock-tabs-tab-info__title">Ипотека? Да-да, конечно, оформляем</div>
-                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="#"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="main-stock-tabs-tab-info__text">Выбирайте приглянувшиеся апартаменты  и оформляйте ипотеку: мы аккредитованы в надежных банках и полностью поддерживываем государсвенную ипотечную программу. </div><a class="main-stock-tabs-tab-info__btn gradient-btn" href="stockpage.html"><span>Узнать подробнее</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="11" cy="11" r="11" fill="white"/>
 <path d="M10.304 16.16C9.72799 16.16 9.43999 15.824 9.43999 15.152C9.43999 14.972 9.46999 14.72 9.52999 14.396L10.268 10.652C10.304 10.484 10.322 10.346 10.322 10.238C10.322 10.082 10.292 9.968 10.232 9.896C10.172 9.812 10.094 9.77 9.99799 9.77C9.74599 9.77 9.40399 10.01 8.97199 10.49C8.95999 10.502 8.94199 10.508 8.91799 10.508C8.86999 10.508 8.83399 10.49 8.80999 10.454C8.78599 10.406 8.78599 10.364 8.80999 10.328C9.24199 9.824 9.63199 9.458 9.97999 9.23C10.328 9.002 10.67 8.888 11.006 8.888C11.582 8.888 11.87 9.2 11.87 9.824C11.87 10.028 11.846 10.232 11.798 10.436L11.042 14.396C11.018 14.504 11.006 14.642 11.006 14.81C11.006 15.098 11.096 15.242 11.276 15.242C11.396 15.242 11.528 15.188 11.672 15.08C11.828 14.972 12.014 14.816 12.23 14.612C12.254 14.588 12.278 14.576 12.302 14.576C12.338 14.576 12.368 14.6 12.392 14.648C12.416 14.684 12.41 14.72 12.374 14.756C11.966 15.236 11.6 15.59 11.276 15.818C10.964 16.046 10.64 16.16 10.304 16.16ZM11.51 7.016C11.198 7.016 10.946 6.926 10.754 6.746C10.574 6.554 10.484 6.296 10.484 5.972C10.484 5.684 10.574 5.45 10.754 5.27C10.946 5.09 11.198 5 11.51 5C11.822 5 12.062 5.09 12.23 5.27C12.41 5.45 12.5 5.684 12.5 5.972C12.5 6.308 12.41 6.566 12.23 6.746C12.062 6.926 11.822 7.016 11.51 7.016Z" fill="#0C5D27"/>
 </svg></a>
@@ -118,7 +124,7 @@
             </div>
           </div>
           <div class="main-infrastructure"><img class="main-infrastructure-top" src="assets/images/img-infrastructure-top.png" alt=""><img class="main-infrastructure-bot" src="assets/images/img-infrastructure-bot.png" alt="">
-            <div class="container">
+            <div class="mycontainer">
               <div class="main__title">Участки под дачное</br>строительство в 10 км от КАД</div>
               <div class="main-infrastructure__text">Коттеджный посёлок «Аннинские просторы» — это уютное и спокойное место с отличной экологией и доступностью всей необходимой инфраструктуры для комфортной семейной жизни. </div>
               <div class="main-infrastructure-items">
@@ -142,57 +148,220 @@
                   <div class="main-infrastructure-items-item__title">Земля в собственности</div>
                   <div class="main-infrastructure-items-item__text">Проведено их межевание и присвоены кадастровые номера.</div>
                 </div>
-              </div><a class="main-infrastructure__btn gradient-btn" href="#"><span>Записаться на экскурсию</span></a>
+              </div><a class="main-infrastructure__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-phone&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Записаться на экскурсию</span></a>
             </div>
           </div>
-          <div class="main-advantages">
-            <div class="container">
-              <div class="main-advantages-item">
-                <div class="main-advantages-item__img"><img src="assets/images/advantages-item1.jpg" alt=""></div>
-                <div class="main-advantages-item-info">
-                  <div class="main-advantages-item-info__title">Всё для детей</div>
-                  <div class="main-advantages-item-info__subtitle">Два детских сада</div>
-                  <div class="main-advantages-item-info__item">Детский сад No26 (п. Аннино, ул. Весенняя)</div>
-                  <div class="main-advantages-item-info__item">Детский сад No15 (д. Разбегаево, 51А)</div>
-                  <div class="main-advantages-item-info__subtitle">МОУ Аннинская средняя школа</div>
-                  <div class="main-advantages-item-info__item">Расположена в посёлке Аннино (ул. Садовая, 2)</div>
-                  <div class="main-advantages-item-info__subtitle">Молодежный культурно-досуговый комплекс</div>
-                  <div class="main-advantages-item-info__item">Посёлок Аннино, улица Садовая, 16</div>
-                  <div class="main-advantages-item-info__subtitle">ДК «Разбегаево»</div>
-                  <div class="main-advantages-item-info__item">Деревня Разбегаево, 51а, во дворах</div>
+          <div class="main-advantages"><img class="main-advantages__img" src="assets/images/advantages-img.png" alt="">
+            <div class="main-advantages-wrap">
+              <div class="main-advantages-wrap-content">
+                <div class="mycontainer">
+                  <div class="main-advantages-item">
+                    <div class="main-advantages-item__img"><img src="assets/images/advantages-item1.jpg" alt=""></div>
+                    <div class="main-advantages-item-info">
+                      <div class="main-advantages-item-info__title">Всё для детей</div>
+                      <div class="main-advantages-item-info__subtitle">Два детских сада</div>
+                      <div class="main-advantages-item-info__item">Детский сад No26 (п. Аннино, ул. Весенняя)</div>
+                      <div class="main-advantages-item-info__item">Детский сад No15 (д. Разбегаево, 51А)</div>
+                      <div class="main-advantages-item-info__subtitle">МОУ Аннинская средняя школа</div>
+                      <div class="main-advantages-item-info__item">Расположена в посёлке Аннино (ул. Садовая, 2)</div>
+                      <div class="main-advantages-item-info__subtitle">Молодежный культурно-досуговый комплекс</div>
+                      <div class="main-advantages-item-info__item">Посёлок Аннино, улица Садовая, 16</div>
+                      <div class="main-advantages-item-info__subtitle">ДК «Разбегаево»</div>
+                      <div class="main-advantages-item-info__item">Деревня Разбегаево, 51а, во дворах</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="main-advantages-item">
-                <div class="main-advantages-item__img"><img src="assets/images/advantages-item1.jpg" alt=""></div>
-                <div class="main-advantages-item-info">
-                  <div class="main-advantages-item-info__title">Всё для детей</div>
-                  <div class="main-advantages-item-info__subtitle">Два детских сада</div>
-                  <div class="main-advantages-item-info__item">Детский сад No26 (п. Аннино, ул. Весенняя)</div>
-                  <div class="main-advantages-item-info__item">Детский сад No15 (д. Разбегаево, 51А)</div>
-                  <div class="main-advantages-item-info__subtitle">МОУ Аннинская средняя школа</div>
-                  <div class="main-advantages-item-info__item">Расположена в посёлке Аннино (ул. Садовая, 2)</div>
-                  <div class="main-advantages-item-info__subtitle">Молодежный культурно-досуговый комплекс</div>
-                  <div class="main-advantages-item-info__item">Посёлок Аннино, улица Садовая, 16</div>
-                  <div class="main-advantages-item-info__subtitle">ДК «Разбегаево»</div>
-                  <div class="main-advantages-item-info__item">Деревня Разбегаево, 51а, во дворах</div>
+              <div class="main-advantages-wrap-content">
+                <div class="mycontainer">
+                  <div class="main-advantages-item">
+                    <div class="main-advantages-item__img"><img src="assets/images/advantages-item2.png" alt=""></div>
+                    <div class="main-advantages-item-info">
+                      <div class="main-advantages-item-info__title">Всё для спорта</div>
+                      <div class="main-advantages-item-info__subtitle">МБУ Центр физической культуры, спорта и здоровья</div>
+                      <div class="main-advantages-item-info__item">Посёлок Аннино, ул. Садовая, 18</div>
+                      <div class="main-advantages-item-info__subtitle">Футбольное поле</div>
+                      <div class="main-advantages-item-info__item">Посёлок Аннино,во дворе Центральной улицы</div>
+                      <div class="main-advantages-item-info__subtitle">Спортивно-развлекательный центр «Скейтпарк Аннино»</div>
+                      <div class="main-advantages-item-info__item">Там же, во дворе Центральной улицы, расположен скейтпарк</div>
+                      <div class="main-advantages-item-info__subtitle">Спортивный комплекс</div>
+                      <div class="main-advantages-item-info__item">Находится в 8 км в деревне Горбунки</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="main-advantages-item">
-                <div class="main-advantages-item__img"><img src="assets/images/advantages-item1.jpg" alt=""></div>
-                <div class="main-advantages-item-info">
-                  <div class="main-advantages-item-info__title">Всё для детей</div>
-                  <div class="main-advantages-item-info__subtitle">Два детских сада</div>
-                  <div class="main-advantages-item-info__item">Детский сад No26 (п. Аннино, ул. Весенняя)</div>
-                  <div class="main-advantages-item-info__item">Детский сад No15 (д. Разбегаево, 51А)</div>
-                  <div class="main-advantages-item-info__subtitle">МОУ Аннинская средняя школа</div>
-                  <div class="main-advantages-item-info__item">Расположена в посёлке Аннино (ул. Садовая, 2)</div>
-                  <div class="main-advantages-item-info__subtitle">Молодежный культурно-досуговый комплекс</div>
-                  <div class="main-advantages-item-info__item">Посёлок Аннино, улица Садовая, 16</div>
-                  <div class="main-advantages-item-info__subtitle">ДК «Разбегаево»</div>
-                  <div class="main-advantages-item-info__item">Деревня Разбегаево, 51а, во дворах</div>
+              <div class="main-advantages-wrap-content">
+                <div class="mycontainer">
+                  <div class="main-advantages-item">
+                    <div class="main-advantages-item__img"><img src="assets/images/advantages-item3.png" alt=""></div>
+                    <div class="main-advantages-item-info">
+                      <div class="main-advantages-item-info__title">А также товары, услуги и медицина</div>
+                      <div class="main-advantages-item-info__subtitle">Три продуктовых универмага в шаговой доступности</div>
+                      <div class="main-advantages-item-info__item">Магазин Магнит (п. Аннино, ул. 10-ой Пятилетки, 2А)</div>
+                      <div class="main-advantages-item-info__item">Магазин Магнит (д. Разбегаево, 1-й микрорайон, здание №1)</div>
+                      <div class="main-advantages-item-info__item">Универсам Пятёрочка (п. Аннино, ул. 10-ой Пятилетки, 4А)</div>
+                      <div class="main-advantages-item-info__subtitle">Отделения «Сбербанка», «Почты России» и «МФЦ»</div>
+                      <div class="main-advantages-item-info__item">Почта России (п. Аннино, ул. Садовая, 10)</div>
+                      <div class="main-advantages-item-info__item">Почта России (д. Разбегаево)</div>
+                      <div class="main-advantages-item-info__item">Сбербанк (п. Аннино, ул. Садовая, 10)</div>
+                      <div class="main-advantages-item-info__item">МФЦ (п. Аннино, ул. 10-й Пятилетки, 1А)</div>
+                      <div class="main-advantages-item-info__subtitle">Поликлиника</div>
+                      <div class="main-advantages-item-info__item">Поликлиника (п. Аннино, ул. Садовая, 12)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-advantages-wrap-content">
+                <div class="mycontainer">
+                  <div class="main-advantages-item">
+                    <div class="main-advantages-item__img"><img src="assets/images/advantages-item4.png" alt=""></div>
+                    <div class="main-advantages-item-info">
+                      <div class="main-advantages-item-info__title">Отдых и развлечения</div>
+                      <div class="main-advantages-item-info__subtitle">Горнолыжный курорт «Туутари Парк»</div>
+                      <div class="main-advantages-item-info__item">Курорт располагает развлекательными возможностями в летний и зимний сезон: ресторан, лыжные спуски, пейнтбол, прокат велосипедов, парапланов.</div>
+                      <div class="main-advantages-item-info__subtitle">Музеи и памятники архитектуры</div>
+                      <div class="main-advantages-item-info__item">Петергоф — исторический дворцово-парковый ансамбль на южном берегу Финского залива</div>
+                      <div class="main-advantages-item-info__item">Стрельна — старейший петербургский пригород, где расположены дворцы и уютный парк</div>
+                      <div class="main-advantages-item-info__subtitle">Царская рыбалка</div>
+                      <div class="main-advantages-item-info__item">Центр рыболовства «Рыбные пруды» — благоустроенная зона отдыха, расположенная недалеко от города. Имеется два зарыбленных водоема — большой для ловли карпа и малый для ловли форели</div>
+                      <div class="main-advantages-item-info__subtitle">Аэродром «Гостилицы»</div>
+                      <div class="main-advantages-item-info__item">В любое время года на территории аэродрома собираются поклонники малой авиации, обучаются пилоты, проводятся соревнования и праздники</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="main-about-wrap"> 
+            <div class="main-about"><img src="assets/images/img-infrastructure-top.png" alt="">
+              <div class="mycontainer">
+                <div class="main__title">Дачное некоммерческое</br>партнёрство сделает вашу</br>жизнь спокойной</div>
+                <div class="main-about__price">За <span>3000</span> руб/месяц</div>
+                <div class="main-infrastructure-items">
+                  <div class="main-infrastructure-items-item">
+                    <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item5.svg" alt=""></div>
+                    <div class="main-infrastructure-items-item__title">Круглосуточная охрана</div>
+                    <div class="main-infrastructure-items-item__text">Никаких посторонних</br>на территории</div>
+                  </div>
+                  <div class="main-infrastructure-items-item">
+                    <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item6.svg" alt=""></div>
+                    <div class="main-infrastructure-items-item__title">Уборка территории</div>
+                    <div class="main-infrastructure-items-item__text">От снега, мусора</br>и травы</div>
+                  </div>
+                  <div class="main-infrastructure-items-item">
+                    <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item7.svg" alt=""></div>
+                    <div class="main-infrastructure-items-item__title">Решение проблем</div>
+                    <div class="main-infrastructure-items-item__text">Ремонт дорог и других</br>коммуникаций</div>
+                  </div>
+                  <div class="main-infrastructure-items-item">
+                    <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item8.svg" alt=""></div>
+                    <div class="main-infrastructure-items-item__title">Вывоз мусора</div>
+                    <div class="main-infrastructure-items-item__text">Никаких свалок и</br>неприятного запаха</div>
+                  </div>
+                </div><a class="main-infrastructure__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-message&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Записаться на просмотр участка</span></a>
+              </div>
+            </div>
+            <div class="main-genplan"><img class="main-genplan__bot" src="assets/images/about-bot.png" alt=""><img class="main-genplan__img" src="assets/images/genplan-img.png" alt="">
+              <div class="mycontainer">
+                <div class="main__title">Выберите свой участок</br>в “Аннинских просторах”</div><img src="assets/images/genplan.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="main-location"><img src="assets/images/location-img.png" alt="">
+            <div class="mycontainer">
+              <div class="main__title">Расположение посёлка</div>
+              <div class="main-location-content">
+                <div class="main-location-content-info">
+                  <div class="main-location-content-info-tabs">
+                    <div class="main-location-content-info-tabs__item active">Автомобиль</div>
+                    <div class="main-location-content-info-tabs__item">Общественный транспорт</div>
+                  </div>
+                  <div class="main-location-content-info__input">
+                    <input id="suggest" type="text" placeholder="Введите местоположение" autocomplete="off">
+                  </div>
+                </div>
+                <div class="main-location-content-map" id="map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-perspective"><img src="assets/images/perspective-img.png" alt="">
+            <div class="mycontainer">
+              <div class="main__title">Посёлок и его</br>перспективы</div>
+              <div class="main-infrastructure__text">Рядом с посёлком нет никаких опасных предприятий. Вокруг него поля, чуть дальше располагается лес, а в 8 км Шинкарский пруд.Поэтому жизнь здесь благоприятно сказывается на здоровье. Особенно на здоровье детей, которые могут абсолютно безопасно бегать и играть на улице.Вы можете разбить свой сад, с разными видами деревьев, цветов и кустарников. Посадить небольшой огородик, устроить теплицу. Или засадить весь участок газоном. Будьте уверены, на этой земле всё растёт отлично.</div>
+              <div class="main-perspective-items">
+                <div class="main-perspective-items-item">
+                  <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item1.jpg" alt=""></div>
+                  <div class="main-perspective-items-item__title">Зоны для спорта и отдыха</div>
+                  <div class="main-perspective-items-item__text">В посёлке будут построены детская и спортивная площадки, а также зона отдыха.</div>
+                </div>
+                <div class="main-perspective-items-item">
+                  <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item2.jpg" alt=""></div>
+                  <div class="main-perspective-items-item__title">Красивая ограда</div>
+                  <div class="main-perspective-items-item__text">Красивое ограждение вдоль границы посёлка.</div>
+                </div>
+                <div class="main-perspective-items-item">
+                  <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item3.jpg" alt=""></div>
+                  <div class="main-perspective-items-item__title">Парковка для гостей</div>
+                  <div class="main-perspective-items-item__text">Отдельная зона паркинга для гостей поселка.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-partners">
+            <div class="mycontainer">
+              <div class="main__title">Нам доверяют</div>
+              <div class="main-partners-slider">
+                <div class="main-partners-slider-item"><img src="assets/images/partners1.jpg" alt=""></div>
+                <div class="main-partners-slider-item"><img src="assets/images/partners2.jpg" alt=""></div>
+                <div class="main-partners-slider-item"><img src="assets/images/partners3.jpg" alt=""></div>
+                <div class="main-partners-slider-item"><img src="assets/images/partners4.jpg" alt=""></div>
+                <div class="main-partners-slider-item"><img src="assets/images/partners1.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div id="form-message" style="display:none">
+            <form class="form-message">
+              <div class="form__title">Пишите, мы ответим</div>
+              <div class="general-form">
+                <div class="general-itemInput general-itemInput_50">
+                  <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
+                </div>
+                <div class="general-itemInput general-itemInput_50">
+                  <input class="general-itemInput__input" type="text" data-type="email" data-required="" placeholder="E-mail">
+                </div>
+                <div class="general-itemInput">
+                  <textarea class="general-itemInput__input" type="text" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="general-bottomBlock">
+                  <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
+                  <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="form-phone" style="display:none">
+            <form class="form-message">
+              <div class="form__title">Пишите, мы ответим</div>
+              <div class="general-form">
+                <div class="general-itemInput general-itemInput_50">
+                  <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
+                </div>
+                <div class="general-itemInput general-itemInput_25">
+                  <select class="general-itemInput__input">
+                    <option class="disabled">Дата</option>
+                  </select>
+                </div>
+                <div class="general-itemInput general-itemInput_25">
+                  <select class="general-itemInput__input">
+                    <option class="disabled">Время</option>
+                  </select>
+                </div>
+                <div class="general-bottomBlock">
+                  <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
+                  <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -218,11 +387,15 @@
         </div>
       </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=17759d45-d71e-4752-84c6-8a8af7f2082a" type="text/javascript"></script>
     <script src="assets/scripts/jquery.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
     <script src="assets/scripts/inputmask.js"></script>
     <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/scripts/slick/slick.min.js"></script>
     <script src="assets/scripts/validation.js"></script>
+    <script src="assets/scripts/ionRangeSlider/ionRangeSlider.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
