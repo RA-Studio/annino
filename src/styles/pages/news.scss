@@ -106,14 +106,31 @@
 		}
 	}
 }
-
-.datepicker table tr td span.active.active, 
-.datepicker table tr td span.active.disabled.active, 
-.datepicker table tr td span.active.disabled:active,
- .datepicker table tr td span.active.disabled:hover.active, 
- .datepicker table tr td span.active.disabled:hover:active, 
- .datepicker table tr td span.active:active, 
- .datepicker table tr td span.active:hover.active, 
- .datepicker table tr td span.active:hover:active{
-	background: var(--link);
+.datetimepicker{
+	z-index: 99999!important;
+}
+.datetimepicker table tr td span.active.active, 
+.datetimepicker table tr td span.active.disabled.active, 
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.disabled:hover.active, 
+.datetimepicker table tr td span.active.disabled:hover:active, 
+.datetimepicker table tr td span.active:active, 
+.datetimepicker table tr td span.active:hover.active, 
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker .datetimepicker-days td.active{
+	background: var(--link)!important;
+}
+.datetimepicker .table-condensed .prev,
+.datetimepicker .table-condensed .next{
+	display: none;
+}
+.datetimepicker th.switch,
+.datetimepicker .datetimepicker-days th.switch{
+	width: 301px;
+}
+.datetimepicker .datetimepicker-days td,
+.datetimepicker .datetimepicker-days th{
+	width: 43px;
+	height: 35px;
+	display: inline-block;
 }

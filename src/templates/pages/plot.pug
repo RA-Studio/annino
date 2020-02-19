@@ -55,7 +55,7 @@ block content
 					.plot-content-info-row
 						span Охрана
 						span Есть
-					a.plot-content-info__btn.gradient-btn(href="#") 
+					a.plot-content-info__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-plot", "touch": false}' href="javascript:;") 
 						span Записаться на просмотр
 				.plot-content-plan
 					.plot-content-plan__title Пример планировки участка
@@ -101,8 +101,12 @@ block content
 							.plot-calc-content-sliders__title Период рассрочки, мес
 							input.plot-calc-content-sliders__input(type="tel" value="1" id="time" data-min="1" data-max="12" name="input-vol")
 							input.plot-calc-content-sliders__range(type="range" id="timeRange" data-min="1" data-max="12" data-from="9" data-hide-min-max="true" data-hide-from-to="true")
-						.plot-calc-content-sliders__btn.gradient-btn
+						a.plot-calc-content-sliders__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-plot", "touch": false}' href="javascript:;") 
 							span Записаться на просмотр
-
 					.plot-calc-content__img
 						img(src="assets/images/plot-calc.png", alt="")
+
+	#form-phone(style="display:none")
+		include ../common/form-phone.pug
+	#form-plot(style="display: none")
+		include ../common/form-plot.pug

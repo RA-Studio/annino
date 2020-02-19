@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Tenor+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick-theme.css">
@@ -22,7 +23,7 @@
     <div class="wrapper">
       <div class="overlay"></div>
       <header class="header"><a class="header__logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="#">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
+        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="howtobuy.html">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
         <div class="header-info">
           <div class="header-info-wrap"><a class="header-info__tel" href="tel:+78121234567">+7 (812) 123-45-67</a>
             <div class="header-info__work close-work">Закрыто. Откроемся в 10.00</div>
@@ -46,7 +47,7 @@
 </svg>
           </div>
         </div>
-        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Как купить</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
+        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="howtobuy.html">Как купить</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
         <div class="header-popup-bot">
           <div class="header-popup-bot-item"><a href="#">Политика конфиденциальности</a></div>
           <div class="header-popup-bot-item">Разработано в <a href="ra-studio.ru">RA-Studio</a></div>
@@ -67,90 +68,127 @@
           <div class="mycontainer">
             <div class="title">Проекты</div>
             <div class="projects__span">11 альбомов</div>
-            <div class="projects-filter">
-              <div class="projects-filter__item active">Построенные объекты</div>
-              <div class="projects-filter__item">Строящиеся объекты</div>
+            <div class="projects-wrap">
+              <div class="projects-filter">
+                <div class="projects-filter__item active">Построенные объекты</div>
+                <div class="projects-filter__item">Строящиеся объекты</div>
+              </div>
+              <div class="projects-items"><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery0">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery1">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery2">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery3">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery4">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery5">
+                  <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
+                    <div class="projects-items-item__img-btn">
+                       <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
+</svg>Посмотреть
+                    </div>
+                  </div>
+                  <div class="projects-items-item-info">
+                    <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
+                    <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
+                  </div>
+                  <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a></div></a>
+              </div>
+              <div class="projects-pagination">
+                <div class="projects-pagination__prev disabled"></div>
+                <div class="projects-pagination__item active">1</div><a class="projects-pagination__item" href="#">2</a><a class="projects-pagination__item" href="#">3</a><a class="projects-pagination__item" href="#">4</a>
+                <div class="projects-pagination__item item__more"></div><a class="projects-pagination__item" href="#">12</a><a class="projects-pagination__next" href="#"></a>
+              </div>
             </div>
-            <div class="projects-items"><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery0">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery0"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery1">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery1"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery2">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery2"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery3">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery3"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery4">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery4"></a></div></a><a class="projects-items-item" href="assets/images/project-item.jpg" data-fancybox="gallery5">
-                <div class="projects-items-item__img"><img src="assets/images/project-item.jpg" alt="">
-                  <div class="projects-items-item__img-btn">
-                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.01583 0C13.5092 0 17.2475 3.23333 18.0317 7.5C17.2483 11.7667 13.5092 15 9.01583 15C4.5225 15 0.784167 11.7667 0 7.5C0.783333 3.23333 4.5225 0 9.01583 0ZM9.01583 13.3333C10.7154 13.333 12.3645 12.7557 13.6932 11.696C15.0219 10.6363 15.9516 9.15689 16.33 7.5C15.9502 5.84442 15.0199 4.36667 13.6914 3.30835C12.3628 2.25004 10.7144 1.67377 9.01583 1.67377C7.31725 1.67377 5.66891 2.25004 4.34031 3.30835C3.01172 4.36667 2.08147 5.84442 1.70167 7.5C2.08008 9.15689 3.00973 10.6363 4.33845 11.696C5.66718 12.7557 7.31628 13.333 9.01583 13.3333ZM9.01583 11.25C8.02127 11.25 7.06745 10.8549 6.36418 10.1516C5.66092 9.44839 5.26583 8.49456 5.26583 7.5C5.26583 6.50544 5.66092 5.55161 6.36418 4.84835C7.06745 4.14509 8.02127 3.75 9.01583 3.75C10.0104 3.75 10.9642 4.14509 11.6675 4.84835C12.3707 5.55161 12.7658 6.50544 12.7658 7.5C12.7658 8.49456 12.3707 9.44839 11.6675 10.1516C10.9642 10.8549 10.0104 11.25 9.01583 11.25ZM9.01583 9.58333C9.56837 9.58333 10.0983 9.36384 10.489 8.97314C10.8797 8.58244 11.0992 8.05253 11.0992 7.5C11.0992 6.94747 10.8797 6.41756 10.489 6.02686C10.0983 5.63616 9.56837 5.41667 9.01583 5.41667C8.4633 5.41667 7.9334 5.63616 7.54269 6.02686C7.15199 6.41756 6.9325 6.94747 6.9325 7.5C6.9325 8.05253 7.15199 8.58244 7.54269 8.97314C7.9334 9.36384 8.4633 9.58333 9.01583 9.58333Z" fill="white" fill-opacity="0.8"/>
-</svg>Посмотреть
-                  </div>
-                </div>
-                <div class="projects-items-item-info">
-                  <div class="projects-items-item__title">Дом Atmosphere. 250 кв.м.</div>
-                  <div class="projects-items-item__text">Место строительства: Ленинградская область, пос. Ропша </div>
-                </div>
-                <div style="display:none"><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a><a href="assets/images/project-item.jpg" data-fancybox="gallery5"></a></div></a>
+            <div class="projects-map">
+              <div class="projects-map__title">Карта объектов</div><img src="assets/images/genplan.jpg" alt="">
             </div>
-            <div class="projects-pagination">
-              <div class="projects-pagination__prev disabled"></div>
-              <div class="projects-pagination__item active">1</div><a class="projects-pagination__item" href="#">2</a><a class="projects-pagination__item" href="#">3</a><a class="projects-pagination__item" href="#">4</a>
-              <div class="projects-pagination__item item__more"></div><a class="projects-pagination__item" href="#">12</a><a class="projects-pagination__next" href="#"></a>
-            </div>
+            <form class="form">
+              <div class="form__title">Заказать обратный звонок</div>
+              <div class="general-form">
+                <div class="general-itemInput general-itemInput_50">
+                  <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
+                </div>
+                <div class="general-itemInput general-itemInput_50">
+                  <input class="general-itemInput__input datetimepickerPhone" type="text" autocomplete="off" placeholder="Выберете время звонка">
+                </div>
+                <div class="general-bottomBlock">
+                  <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
+                  <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+                </div>
+              </div>
+            </form>
           </div>
+        </div>
+        <div id="form-phone" style="display:none">
+          <form class="form">
+            <div class="form__title">Заказать обратный звонок</div>
+            <div class="general-form">
+              <div class="general-itemInput general-itemInput_50">
+                <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
+              </div>
+              <div class="general-itemInput general-itemInput_50">
+                <input class="general-itemInput__input datetimepickerPhone" type="text" autocomplete="off" placeholder="Выберете время звонка">
+              </div>
+              <div class="general-bottomBlock">
+                <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
+                <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <footer class="footer">
@@ -177,8 +215,8 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=17759d45-d71e-4752-84c6-8a8af7f2082a" type="text/javascript"></script>
     <script src="assets/scripts/jquery.js"></script>
-    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
+    <script src="assets/scripts/bootstrap_datetimepicker/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/bootstrap_datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/scripts/inputmask.js"></script>
     <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/scripts/slick/slick.min.js"></script>

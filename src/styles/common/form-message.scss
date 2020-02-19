@@ -1,12 +1,41 @@
 #form-phone,
-#form-message{
+#form-message,
+#form-plot{
 	padding: 0;
 	border-radius: 10px;
-	.form-message{
+	.form{
 		margin-bottom: 0;
 	}
 }
-.form-message{
+#form-plot{
+	.form-plot{
+		&__title{
+			@include text_subtitle;
+			margin-bottom: 40px; 
+		}
+		&__img{
+			height: 160px;
+			margin-top: -20px;
+			img{
+				height: 100%;
+			}
+		}
+	}
+	.form{
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 20px;
+		width: 940px;
+		max-width: none;
+		&-col:last-child{
+			max-width: 540px;
+		}
+		&__title{
+			text-align: left;
+		}
+	}
+}
+.form{
 	width: 100%;
 	max-width: 624px;
 	margin: 0 auto 150px;

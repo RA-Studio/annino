@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Tenor+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/bootstrap_datetimepicker/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/scripts/slick/slick-theme.css">
@@ -22,7 +23,7 @@
     <div class="wrapper">
       <div class="overlay"></div>
       <header class="header"><a class="header__logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="#">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
+        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="howtobuy.html">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
         <div class="header-info">
           <div class="header-info-wrap"><a class="header-info__tel" href="tel:+78121234567">+7 (812) 123-45-67</a>
             <div class="header-info__work close-work">Закрыто. Откроемся в 10.00</div>
@@ -46,7 +47,7 @@
 </svg>
           </div>
         </div>
-        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Как купить</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
+        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="howtobuy.html">Как купить</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
         <div class="header-popup-bot">
           <div class="header-popup-bot-item"><a href="#">Политика конфиденциальности</a></div>
           <div class="header-popup-bot-item">Разработано в <a href="ra-studio.ru">RA-Studio</a></div>
@@ -86,7 +87,7 @@
 </defs>
 </svg></a></div>
             <div class="contacts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f1853bf8f81da14682d7407281a42f2b35a6ca30d3fdde2852fb95866c6b20d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script></div>
-            <form class="form-message">
+            <form class="form form-message">
               <div class="form__title">Пишите, мы ответим</div>
               <div class="general-form">
                 <div class="general-itemInput general-itemInput_50">
@@ -105,6 +106,23 @@
               </div>
             </form>
           </div>
+        </div>
+        <div id="form-phone" style="display:none">
+          <form class="form">
+            <div class="form__title">Заказать обратный звонок</div>
+            <div class="general-form">
+              <div class="general-itemInput general-itemInput_50">
+                <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
+              </div>
+              <div class="general-itemInput general-itemInput_50">
+                <input class="general-itemInput__input datetimepickerPhone" type="text" autocomplete="off" placeholder="Выберете время звонка">
+              </div>
+              <div class="general-bottomBlock">
+                <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
+                <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <footer class="footer">
@@ -131,8 +149,8 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=17759d45-d71e-4752-84c6-8a8af7f2082a" type="text/javascript"></script>
     <script src="assets/scripts/jquery.js"></script>
-    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
+    <script src="assets/scripts/bootstrap_datetimepicker/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/bootstrap_datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/scripts/inputmask.js"></script>
     <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
     <script src="assets/scripts/slick/slick.min.js"></script>

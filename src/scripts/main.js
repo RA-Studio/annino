@@ -45,15 +45,26 @@ $(document).ready(function () {
 	}
 	/*Калькулятор Конец*/
 
-	$('#datetimepicker').datepicker({
+	$('#datetimepicker').datetimepicker({
 		format: "MM yyyy",
 		autoclose: true,
-		startView: 2,
-		minViewMode: 1,
-		maxViewMode: 2,
+		startView: 3,
+		minView: 3,
+		maxView: 4,
 		orientation: "bottom left",
 		language: "ru",
 		endDate: new Date(),
+	});
+
+
+	$('.datetimepickerPhone').datetimepicker({
+		format: "dd-mm-yyyy hh:ii",
+		autoclose: true,
+		startView: 3,
+		maxView: 4,
+		orientation: "bottom left",
+		language: "ru",
+		startDate: new Date(),
 	});
 
 	if ($('#map').length) {

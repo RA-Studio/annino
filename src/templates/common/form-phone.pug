@@ -1,14 +1,10 @@
-form.form-message
-	.form__title Пишите, мы ответим
+form.form
+	.form__title Заказать обратный звонок
 	.general-form
 		.general-itemInput.general-itemInput_50
 			input.general-itemInput__input(type="tel" data-type="tel" data-required="" placeholder="Телефон")
-		.general-itemInput.general-itemInput_25
-			select.general-itemInput__input
-				option.disabled Дата
-		.general-itemInput.general-itemInput_25
-			select.general-itemInput__input
-				option.disabled Время
+		.general-itemInput.general-itemInput_50
+			input.general-itemInput__input.datetimepickerPhone(type="text" autocomplete="off" placeholder="Выберете время звонка")
 		.general-bottomBlock
 			button.general__btn.gradient-btn(type="submit") 
 				span Связаться

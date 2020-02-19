@@ -1,0 +1,35 @@
+.howtobuy{
+	> img{
+		position: absolute;
+		right: 0;
+		top: -70px;
+	}
+	&-content{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+		&-col{
+			flex: 1;
+			max-width: 710px;
+			padding-right: 40px;
+			p{
+				margin-bottom: 20px;
+				span{
+					@include bold;
+					color: var(--link);
+				}
+			}
+			ul{
+				margin-bottom: 20px;
+				border-bottom: 1px solid rgba(71, 101, 122, 0.3);
+				li{
+					@include enlarged;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&__img{
+			margin-right: 8%;
+		}
+	}
+}
