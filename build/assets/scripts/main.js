@@ -119,7 +119,7 @@ $(document).on('click', '.header-info__burger, .overlay', function (e) {
 	$(document).find('.header-popup').toggleClass('active');
 	$(document).find('.overlay').fadeToggle();
 	if (document.documentElement.clientWidth <= 1200) {
-		$('body').toggleClass('fixed');
+		$('.wrapper').toggleClass('fixed');
 	}
 });
 /*Боковое меню Конец*/

@@ -37,6 +37,18 @@
 		margin-bottom: 100px;
 		border-radius: 10px;
 		overflow: hidden;
+		background: rgba(12, 93, 39, 0.1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			position: absolute;
+			width: 32px;
+			height: 32px;
+		}
+		&-overlay{
+			display: none;
+		}
 	}
 }
 

@@ -51,7 +51,7 @@
           <!--a.header-popup-menu__item(href="index.html#location") Расположение--><a class="header-popup-menu__item" href="index.html#infrastructure">Участки</a><a class="header-popup-menu__item" href="howtobuy.html">Как купить</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a>
         </div>
         <div class="header-popup-bot">
-          <div class="header-popup-bot-item"><a href="#">Политика конфиденциальности</a></div>
+          <div class="header-popup-bot-item"><a target="_blank" href="text.html">Политика конфиденциальности</a></div>
           <div class="header-popup-bot-item">Разработано в <a href="ra-studio.ru">RA-Studio</a></div>
           <div class="header-popup-bot-socials"><a href="#">
                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
 </linearGradient>
 </defs>
 </svg></a></div>
-            <div class="contacts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f1853bf8f81da14682d7407281a42f2b35a6ca30d3fdde2852fb95866c6b20d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script></div>
+            <div class="contacts__map"><img src="assets/images/preloader.svg" alt=""><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f1853bf8f81da14682d7407281a42f2b35a6ca30d3fdde2852fb95866c6b20d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script></div>
             <form class="form form-message">
               <div class="form__title">Пишите, мы ответим</div>
               <div class="general-form">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="general-bottomBlock">
                   <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
-                  <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+                  <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="text.html">с политикой конфиденциальности</a></p>
                 </div>
               </div>
             </form>
@@ -117,11 +117,11 @@
                 <input class="general-itemInput__input" type="tel" data-type="tel" data-required="" placeholder="Телефон">
               </div>
               <div class="general-itemInput general-itemInput_50">
-                <input class="general-itemInput__input datetimepickerPhone" type="text" autocomplete="off" placeholder="Выберете время звонка">
+                <input class="general-itemInput__input datetimepickerPhone" type="text" readonly autocomplete="off" placeholder="Выберите время звонка">
               </div>
               <div class="general-bottomBlock">
                 <button class="general__btn gradient-btn" type="submit"> <span>Связаться</span></button>
-                <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="#">с политикой конфиденциальности</a></p>
+                <p class="general-bottomBlock__text">Отправляя личные данные, Вы соглашаетесь <a target="_blank" href="text.html">с политикой конфиденциальности</a></p>
               </div>
             </div>
           </form>
@@ -135,7 +135,8 @@
           <div class="footer-col__logo"><img src="assets/images/logo.svg" alt=""></div>
         </div>
         <div class="footer-col">
-          <div class="footer-col__text">Аннинское городское поселение, Ломоносовский район, Ленинградская область, Россия</div><a class="footer-col__link" href="#">Схема проезда</a>
+          <div class="footer-col__text">Аннинское городское поселение, Ломоносовский район, Ленинградская область, Россия</div>
+          <!-- a.footer-col__link(href="#") Схема проезда-->
         </div>
         <div class="footer-col">
           <div class="footer-col-socials"><a href="#">
@@ -148,7 +149,7 @@
           <div class="footer-col__subtext">пн-пт: 10.00 — 19.00</div>
         </div>
         <div class="footer-col">
-          <div class="footer-col__text">Разработка сайта<a href="ra-studio.ru">RA-Studio</a></div><a class="footer-col__link" href="#">Политика конфиденциальности</a>
+          <div class="footer-col__text">Разработка сайта<a href="ra-studio.ru">RA-Studio</a></div><a class="footer-col__link" target="_blank" href="text.html">Политика конфиденциальности</a>
         </div>
       </footer>
     </div>

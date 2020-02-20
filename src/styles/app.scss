@@ -19,14 +19,17 @@ body{
 	font-size: 16px;
 	line-height: 150%;
 }
-body.fixed{
-	overflow: hidden;
-}
 .wrapper {
   display: flex;
   min-height: 100vh;
 	flex-direction: column;
 	overflow-x: hidden;
+	&.fixed{
+		overflow: hidden;
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
+		position: relative;
+	}
 }
 .content {
 	flex: 1;
@@ -162,4 +165,8 @@ body.fixed{
 	.title{
 		@include text_subtitle;
 	}
+}
+
+input{
+	line-height:normal!important;
 }

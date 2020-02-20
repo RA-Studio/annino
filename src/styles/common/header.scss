@@ -140,9 +140,11 @@
 			&-item{
 				display: flex;
 				align-items: center;
+				font-size: 14px;
 				a{
 					padding: 5px;
 					margin-left: -5px;
+					
 				}
 				&+&{
 					a{
@@ -247,6 +249,11 @@
 		&-popup{
 			padding-left: 20px;
 			padding-bottom: 10px;
+			@media screen and (orientation: landscape){
+				&{
+					display: block;
+				}
+			}
 			&-top{
 				flex: 0 0 90px;
 				padding-right: 10px;
