@@ -19,6 +19,26 @@ body{
 	font-size: 16px;
 	line-height: 150%;
 }
+body.dark{
+	.header{
+		color: #FDFDFD;
+	}
+	.header-menu__item.red{
+		color: var(--sky);
+	}
+	.header-info__burger svg line{
+		stroke: #FDFDFD;
+	}
+	.main-banner{
+		background: url('../images/banner-dark.jpg') left bottom no-repeat;
+		background-size: cover;
+		color: #FDFDFD;
+	}
+	.main-banner-info__text span{
+		color: #FDFDFD;
+	}
+}
+
 .wrapper {
   display: flex;
   min-height: 100vh;

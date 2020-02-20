@@ -4,6 +4,39 @@
 		background: url('../images/main-banner.jpg') left bottom no-repeat;
 		background-size: cover;
 		position: relative;
+		&__switcher{
+			position: absolute;
+			right: 30px;
+			top: 115px;
+			input{
+				display: none;
+				&:checked + span{
+					background: url('../images/day.svg') center no-repeat;
+					span{
+						right: calc(100% - 29px);
+					}
+				}
+			}
+			>span{
+				display: block;
+				width: 68px;
+				height: 32px;
+				border-radius: 30px;
+				position: relative;
+				background: url('../images/night.svg') center no-repeat;
+				cursor: pointer;
+				span{
+					width: 26px;
+					height: 26px;
+					background: #FDFDFD;
+					position: absolute;
+					top: 3px;
+					right: 3px;
+					border-radius: 50%;
+					transition: .3s;
+				}
+			}
+		}
 		&-info{
 			position: absolute;
 			top: 30%;

@@ -114,6 +114,12 @@ $(document).ready(function () {
 	});
 });
 
+/*Темная тема*/
+$(document).on('change', '.main-banner__switcher input', function (e) {
+	$('body').toggleClass('dark');
+});
+/*Темная тема Конец*/
+
 /*Боковое меню*/
 $(document).on('click', '.header-info__burger, .overlay', function (e) {
 	$(document).find('.header-popup').toggleClass('active');
