@@ -19,6 +19,9 @@ body{
 	font-size: 16px;
 	line-height: 150%;
 }
+body.fixed{
+	overflow: hidden;
+}
 .wrapper {
   display: flex;
   min-height: 100vh;
@@ -117,15 +120,17 @@ body{
 		top: 0;
 		transition: .3s;
 	}
+	&:hover{
+		color: #FFFFFF;
+	}
+	&:focus{
+		color: #FFFFFF;
+	}
 	@media screen and (min-width:1200px) {
 		&:hover{
-			color: #FFFFFF;
 			&:before{
 				opacity: 0;
 			}
-		}
-		&:focus{
-			color: #FFFFFF;
 		}
 		&:active{
 			color: #FFFFFF;
@@ -133,6 +138,8 @@ body{
 		}
 	}
 }
+
+
 
 
 @import 'common/adaptive';
@@ -148,3 +155,11 @@ body{
 @import 'pages/stockpage';
 @import 'pages/map';
 
+@include w480{
+	.main__title{
+		@include text_subtitle;
+	}
+	.title{
+		@include text_subtitle;
+	}
+}

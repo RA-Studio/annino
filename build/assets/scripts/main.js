@@ -76,7 +76,7 @@ $(document).ready(function () {
 		});
 	}
 
-	if ($('.main-advantages').length) {
+	if ($('.main-advantages').length && document.documentElement.clientWidth > 1200) {
 		let advantagesItems = $('.main-advantages-wrap-content'),
 			offsetTop = $(document).find('.main-advantages').offset().top,
 			valueTranslate = -($(window).width() * (advantagesItems.length - 1));
@@ -92,23 +92,71 @@ $(document).ready(function () {
 			});
 		}
 		horizontalScroll();
-		$(window).resize(function (e) {
-			resizewindow(offsetTop);
-		});
 	}
 
 	$(document).find('.main-partners-slider').slick({
 		dots: true,
-		slidesToShow: 4
+		slidesToShow: 4,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					arrows: false
+				}
+			}
+		]
 	});
 
 	resizewindow();
+	$(window).resize(function (e) {
+		resizewindow();
+	});
 });
 
+/*Боковое меню*/
 $(document).on('click', '.header-info__burger, .overlay', function (e) {
 	$(document).find('.header-popup').toggleClass('active');
 	$(document).find('.overlay').fadeToggle();
+	if (document.documentElement.clientWidth <= 1200) {
+		$('body').toggleClass('fixed');
+	}
 });
+/*Боковое меню Конец*/
+
+
+/*Переход по ссылкам на главную*/
+$(document).on('click', '.header-menu__item, .header-popup-menu__item', function (e) {
+	if (window.location.pathname == '/') {
+		idElem = $(this).attr('href').split('#')[1];
+		if (idElem != undefined) {
+			e.preventDefault();
+			var valScrollTop = $('#' + idElem).offset().top
+			$('body,html').animate({
+				scrollTop: valScrollTop
+			}, 800);
+		}
+	}
+});
+/*Переход по ссылкам на главную Конец*/
+
+
+/*Кнопка наверх*/
+if ($(this).scrollTop() > 500) {
+	$(document).find('.toTop').show().css('display', 'flex');
+};
+$('.toTop').click(function () {
+	$('body,html').animate({ scrollTop: 0 }, 500);
+});
+$(document).on('scroll', function (e) {
+	if ($(document).scrollTop() > 500) {
+		$(document).find('.toTop').css('display', 'flex');
+	} else {
+		$(document).find('.toTop').hide();
+	}
+});
+/*Кнопка наверх Конец*/
+
 
 /*Табы*/
 $(document).on('click', '.tabs-navigation-item', function (e) {
@@ -140,7 +188,7 @@ $(document).on('click', '.tabs-arr', function (e) {
 
 
 /*Горизонтальный скролл*/
-if ($('.main-advantages').length) {
+if ($('.main-advantages').length && document.documentElement.clientWidth > 1200) {
 	let offsetTop = $(document).find('.main-advantages').offset().top;
 	$(document).on('scroll', function (e) {
 		horizontalScroll(offsetTop);

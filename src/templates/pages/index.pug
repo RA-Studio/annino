@@ -76,7 +76,7 @@ block content
 						.main-stock-tabs-tab__img
 							img(src="assets/images/main-stock3.png", alt="")
 
-		.main-infrastructure
+		.main-infrastructure#infrastructure
 			img.main-infrastructure-top(src="assets/images/img-infrastructure-top.png", alt="")
 			img.main-infrastructure-bot(src="assets/images/img-infrastructure-bot.png", alt="")
 			.mycontainer
@@ -86,27 +86,31 @@ block content
 					.main-infrastructure-items-item
 						.main-infrastructure-items-item__img
 							img(src="assets/images/infrastructure-item1.svg", alt="")
-						.main-infrastructure-items-item__title Дороги
-						.main-infrastructure-items-item__text Построены внутренние</br>грунтовые дороги в посёлке
+						.main-infrastructure-items-item-info
+							.main-infrastructure-items-item__title Дороги
+							.main-infrastructure-items-item__text Построены внутренние</br>грунтовые дороги в посёлке
 					.main-infrastructure-items-item
 						.main-infrastructure-items-item__img
 							img(src="assets/images/infrastructure-item2.svg", alt="")
-						.main-infrastructure-items-item__title Электричество
-						.main-infrastructure-items-item__text Подведено к границам</br>каждого участка
+						.main-infrastructure-items-item-info
+							.main-infrastructure-items-item__title Электричество
+							.main-infrastructure-items-item__text Подведено к границам</br>каждого участка
 					.main-infrastructure-items-item
 						.main-infrastructure-items-item__img
 							img(src="assets/images/infrastructure-item3.svg", alt="")
-						.main-infrastructure-items-item__title Освещение и ограждение
-						.main-infrastructure-items-item__text Установлено уличное освещение и ограждение по периметру посёлка
+						.main-infrastructure-items-item-info
+							.main-infrastructure-items-item__title Освещение и ограждение
+							.main-infrastructure-items-item__text Установлено уличное освещение и ограждение по периметру посёлка
 					.main-infrastructure-items-item
 						.main-infrastructure-items-item__img
 							img(src="assets/images/infrastructure-item4.svg", alt="")
-						.main-infrastructure-items-item__title Земля в собственности
-						.main-infrastructure-items-item__text Проведено их межевание и присвоены кадастровые номера.
+						.main-infrastructure-items-item-info
+							.main-infrastructure-items-item__title Земля в собственности
+							.main-infrastructure-items-item__text Проведено их межевание и присвоены кадастровые номера.
 				a.main-infrastructure__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-phone", "touch": false}' href="javascript:;")
 					span Записаться на экскурсию
 		
-		.main-advantages
+		.main-advantages#advantages
 			img.main-advantages__img(src="assets/images/advantages-img.png", alt="")
 			.main-advantages-wrap
 				.main-advantages-wrap-content
@@ -185,35 +189,40 @@ block content
 						.main-infrastructure-items-item
 							.main-infrastructure-items-item__img
 								img(src="assets/images/infrastructure-item5.svg", alt="")
-							.main-infrastructure-items-item__title Круглосуточная охрана
-							.main-infrastructure-items-item__text Никаких посторонних</br>на территории
+							.main-infrastructure-items-item-info
+								.main-infrastructure-items-item__title Круглосуточная охрана
+								.main-infrastructure-items-item__text Никаких посторонних</br>на территории
 						.main-infrastructure-items-item
 							.main-infrastructure-items-item__img
 								img(src="assets/images/infrastructure-item6.svg", alt="")
-							.main-infrastructure-items-item__title Уборка территории
-							.main-infrastructure-items-item__text От снега, мусора</br>и травы
+							.main-infrastructure-items-item-info
+								.main-infrastructure-items-item__title Уборка территории
+								.main-infrastructure-items-item__text От снега, мусора</br>и травы
 						.main-infrastructure-items-item
 							.main-infrastructure-items-item__img
 								img(src="assets/images/infrastructure-item7.svg", alt="")
-							.main-infrastructure-items-item__title Решение проблем
-							.main-infrastructure-items-item__text Ремонт дорог и других</br>коммуникаций
+							.main-infrastructure-items-item-info
+								.main-infrastructure-items-item__title Решение проблем
+								.main-infrastructure-items-item__text Ремонт дорог и других</br>коммуникаций
 						.main-infrastructure-items-item
 							.main-infrastructure-items-item__img
 								img(src="assets/images/infrastructure-item8.svg", alt="")
-							.main-infrastructure-items-item__title Вывоз мусора
-							.main-infrastructure-items-item__text Никаких свалок и</br>неприятного запаха
+							.main-infrastructure-items-item-info
+								.main-infrastructure-items-item__title Вывоз мусора
+								.main-infrastructure-items-item__text Никаких свалок и</br>неприятного запаха
 					a.main-infrastructure__btn.gradient-btn(data-fancybox="" data-options='{"src": "#form-message", "touch": false}' href="javascript:;")
-						span Записаться на просмотр участка
+						span Записаться на просмотр
 
-			.main-genplan
+			.main-genplan#genplan
 				img.main-genplan__bot(src="assets/images/about-bot.png", alt="")
 				img.main-genplan__img(src="assets/images/genplan-img.png", alt="")
 				.mycontainer
 					.main__title Выберите свой участок</br>в “Аннинских просторах”
-					img(src="assets/images/genplan.jpg", alt="")
+					.main-genplan__content
+						img(src="assets/images/genplan.jpg", alt="")
 
 		<!--<div>
-		.main-location
+		.main-location#location
 			img(src="assets/images/location-img.png", alt="")
 			.mycontainer
 				.main__title Расположение посёлка
@@ -228,7 +237,7 @@ block content
 					.main-location-content-map#map
 		<div>-->		
 			
-		.main-perspective
+		.main-perspective#perspective
 			img(src="assets/images/perspective-img.png", alt="")
 			.mycontainer
 				.main__title Посёлок и его</br>перспективы
@@ -237,33 +246,41 @@ block content
 					.main-perspective-items-item
 						.main-perspective-items-item__img
 							img(src="assets/images/perspective-item1.jpg", alt="")
-						.main-perspective-items-item__title Зоны для спорта и отдыха
-						.main-perspective-items-item__text В посёлке будут построены детская и спортивная площадки, а также зона отдыха.
+						.main-perspective-items-item-info
+							.main-perspective-items-item__title Зоны для спорта и отдыха
+							.main-perspective-items-item__text В посёлке будут построены детская и спортивная площадки, а также зона отдыха.
 					.main-perspective-items-item
 						.main-perspective-items-item__img
 							img(src="assets/images/perspective-item2.jpg", alt="")
-						.main-perspective-items-item__title Красивая ограда
-						.main-perspective-items-item__text Красивое ограждение вдоль границы посёлка.
+						.main-perspective-items-item-info
+							.main-perspective-items-item__title Красивая ограда
+							.main-perspective-items-item__text Красивое ограждение вдоль границы посёлка.
 					.main-perspective-items-item
 						.main-perspective-items-item__img
 							img(src="assets/images/perspective-item3.jpg", alt="")
-						.main-perspective-items-item__title Парковка для гостей
-						.main-perspective-items-item__text Отдельная зона паркинга для гостей поселка.
+						.main-perspective-items-item-info
+							.main-perspective-items-item__title Парковка для гостей
+							.main-perspective-items-item__text Отдельная зона паркинга для гостей поселка.
 
 		.main-partners
 			.mycontainer
 				.main__title Нам доверяют
 				.main-partners-slider
 					.main-partners-slider-item
-						img(src="assets/images/partners1.jpg", alt="")
+						.main-partners-slider-item__img
+							img(src="assets/images/partners1.jpg", alt="")
 					.main-partners-slider-item
-						img(src="assets/images/partners2.jpg", alt="")
+						.main-partners-slider-item__img
+							img(src="assets/images/partners2.jpg", alt="")
 					.main-partners-slider-item
-						img(src="assets/images/partners3.jpg", alt="")
+						.main-partners-slider-item__img
+							img(src="assets/images/partners3.jpg", alt="")
 					.main-partners-slider-item
-						img(src="assets/images/partners4.jpg", alt="")
+						.main-partners-slider-item__img
+							img(src="assets/images/partners4.jpg", alt="")
 					.main-partners-slider-item
-						img(src="assets/images/partners1.jpg", alt="")
+						.main-partners-slider-item__img
+							img(src="assets/images/partners1.jpg", alt="")
 
 	#form-message(style="display:none")
 		include ../common/form-message.pug

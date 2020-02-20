@@ -23,7 +23,7 @@
     <div class="wrapper">
       <div class="overlay"></div>
       <header class="header"><a class="header__logo" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-        <div class="header-menu"><a class="header-menu__item" href="#">Участки</a><a class="header-menu__item" href="#">О посёлке</a><a class="header-menu__item" href="#">Инфраструктура</a><a class="header-menu__item" href="howtobuy.html">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
+        <div class="header-menu"><a class="header-menu__item" href="index.html#genplan">Выбор участка</a><a class="header-menu__item" href="index.html#perspective">О посёлке</a><a class="header-menu__item" href="index.html#advantages">Инфраструктура</a><a class="header-menu__item" href="howtobuy.html">Как купить</a><a class="header-menu__item red" href="stock.html">Акции</a></div>
         <div class="header-info">
           <div class="header-info-wrap"><a class="header-info__tel" href="tel:+78121234567">+7 (812) 123-45-67</a>
             <div class="header-info__work close-work">Закрыто. Откроемся в 10.00</div>
@@ -47,7 +47,9 @@
 </svg>
           </div>
         </div>
-        <div class="header-popup-menu"><a class="header-popup-menu__item" href="#">Участки</a><a class="header-popup-menu__item" href="#">Инфраструктура</a><a class="header-popup-menu__item" href="#">Расположение</a><a class="header-popup-menu__item" href="#">О посёлке</a><a class="header-popup-menu__item" href="#">Выбор участка</a><a class="header-popup-menu__item" href="howtobuy.html">Как купить</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a></div>
+        <div class="header-popup-menu"><a class="header-popup-menu__item" href="index.html#genplan">Выбор участка</a><a class="header-popup-menu__item" href="index.html#perspective">О посёлке</a><a class="header-popup-menu__item" href="index.html#advantages">Инфраструктура</a>
+          <!--a.header-popup-menu__item(href="index.html#location") Расположение--><a class="header-popup-menu__item" href="index.html#infrastructure">Участки</a><a class="header-popup-menu__item" href="howtobuy.html">Как купить</a><a class="header-popup-menu__item" href="projects.html">Типовые проекты</a><a class="header-popup-menu__item" href="stock.html">Новости и акции</a><a class="header-popup-menu__item" href="contacts.html">Контакты</a>
+        </div>
         <div class="header-popup-bot">
           <div class="header-popup-bot-item"><a href="#">Политика конфиденциальности</a></div>
           <div class="header-popup-bot-item">Разработано в <a href="ra-studio.ru">RA-Studio</a></div>
@@ -124,35 +126,43 @@
               </div>
             </div>
           </div>
-          <div class="main-infrastructure"><img class="main-infrastructure-top" src="assets/images/img-infrastructure-top.png" alt=""><img class="main-infrastructure-bot" src="assets/images/img-infrastructure-bot.png" alt="">
+          <div class="main-infrastructure" id="infrastructure"><img class="main-infrastructure-top" src="assets/images/img-infrastructure-top.png" alt=""><img class="main-infrastructure-bot" src="assets/images/img-infrastructure-bot.png" alt="">
             <div class="mycontainer">
               <div class="main__title">Участки под дачное</br>строительство в 10 км от КАД</div>
               <div class="main-infrastructure__text">Коттеджный посёлок «Аннинские просторы» — это уютное и спокойное место с отличной экологией и доступностью всей необходимой инфраструктуры для комфортной семейной жизни. </div>
               <div class="main-infrastructure-items">
                 <div class="main-infrastructure-items-item">
                   <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item1.svg" alt=""></div>
-                  <div class="main-infrastructure-items-item__title">Дороги</div>
-                  <div class="main-infrastructure-items-item__text">Построены внутренние</br>грунтовые дороги в посёлке</div>
+                  <div class="main-infrastructure-items-item-info">
+                    <div class="main-infrastructure-items-item__title">Дороги</div>
+                    <div class="main-infrastructure-items-item__text">Построены внутренние</br>грунтовые дороги в посёлке</div>
+                  </div>
                 </div>
                 <div class="main-infrastructure-items-item">
                   <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item2.svg" alt=""></div>
-                  <div class="main-infrastructure-items-item__title">Электричество</div>
-                  <div class="main-infrastructure-items-item__text">Подведено к границам</br>каждого участка</div>
+                  <div class="main-infrastructure-items-item-info">
+                    <div class="main-infrastructure-items-item__title">Электричество</div>
+                    <div class="main-infrastructure-items-item__text">Подведено к границам</br>каждого участка</div>
+                  </div>
                 </div>
                 <div class="main-infrastructure-items-item">
                   <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item3.svg" alt=""></div>
-                  <div class="main-infrastructure-items-item__title">Освещение и ограждение</div>
-                  <div class="main-infrastructure-items-item__text">Установлено уличное освещение и ограждение по периметру посёлка</div>
+                  <div class="main-infrastructure-items-item-info">
+                    <div class="main-infrastructure-items-item__title">Освещение и ограждение</div>
+                    <div class="main-infrastructure-items-item__text">Установлено уличное освещение и ограждение по периметру посёлка</div>
+                  </div>
                 </div>
                 <div class="main-infrastructure-items-item">
                   <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item4.svg" alt=""></div>
-                  <div class="main-infrastructure-items-item__title">Земля в собственности</div>
-                  <div class="main-infrastructure-items-item__text">Проведено их межевание и присвоены кадастровые номера.</div>
+                  <div class="main-infrastructure-items-item-info">
+                    <div class="main-infrastructure-items-item__title">Земля в собственности</div>
+                    <div class="main-infrastructure-items-item__text">Проведено их межевание и присвоены кадастровые номера.</div>
+                  </div>
                 </div>
               </div><a class="main-infrastructure__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-phone&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Записаться на экскурсию</span></a>
             </div>
           </div>
-          <div class="main-advantages"><img class="main-advantages__img" src="assets/images/advantages-img.png" alt="">
+          <div class="main-advantages" id="advantages"><img class="main-advantages__img" src="assets/images/advantages-img.png" alt="">
             <div class="main-advantages-wrap">
               <div class="main-advantages-wrap-content">
                 <div class="mycontainer">
@@ -241,34 +251,43 @@
                 <div class="main-infrastructure-items">
                   <div class="main-infrastructure-items-item">
                     <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item5.svg" alt=""></div>
-                    <div class="main-infrastructure-items-item__title">Круглосуточная охрана</div>
-                    <div class="main-infrastructure-items-item__text">Никаких посторонних</br>на территории</div>
+                    <div class="main-infrastructure-items-item-info">
+                      <div class="main-infrastructure-items-item__title">Круглосуточная охрана</div>
+                      <div class="main-infrastructure-items-item__text">Никаких посторонних</br>на территории</div>
+                    </div>
                   </div>
                   <div class="main-infrastructure-items-item">
                     <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item6.svg" alt=""></div>
-                    <div class="main-infrastructure-items-item__title">Уборка территории</div>
-                    <div class="main-infrastructure-items-item__text">От снега, мусора</br>и травы</div>
+                    <div class="main-infrastructure-items-item-info">
+                      <div class="main-infrastructure-items-item__title">Уборка территории</div>
+                      <div class="main-infrastructure-items-item__text">От снега, мусора</br>и травы</div>
+                    </div>
                   </div>
                   <div class="main-infrastructure-items-item">
                     <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item7.svg" alt=""></div>
-                    <div class="main-infrastructure-items-item__title">Решение проблем</div>
-                    <div class="main-infrastructure-items-item__text">Ремонт дорог и других</br>коммуникаций</div>
+                    <div class="main-infrastructure-items-item-info">
+                      <div class="main-infrastructure-items-item__title">Решение проблем</div>
+                      <div class="main-infrastructure-items-item__text">Ремонт дорог и других</br>коммуникаций</div>
+                    </div>
                   </div>
                   <div class="main-infrastructure-items-item">
                     <div class="main-infrastructure-items-item__img"><img src="assets/images/infrastructure-item8.svg" alt=""></div>
-                    <div class="main-infrastructure-items-item__title">Вывоз мусора</div>
-                    <div class="main-infrastructure-items-item__text">Никаких свалок и</br>неприятного запаха</div>
+                    <div class="main-infrastructure-items-item-info">
+                      <div class="main-infrastructure-items-item__title">Вывоз мусора</div>
+                      <div class="main-infrastructure-items-item__text">Никаких свалок и</br>неприятного запаха</div>
+                    </div>
                   </div>
-                </div><a class="main-infrastructure__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-message&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Записаться на просмотр участка</span></a>
+                </div><a class="main-infrastructure__btn gradient-btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#form-message&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Записаться на просмотр</span></a>
               </div>
             </div>
-            <div class="main-genplan"><img class="main-genplan__bot" src="assets/images/about-bot.png" alt=""><img class="main-genplan__img" src="assets/images/genplan-img.png" alt="">
+            <div class="main-genplan" id="genplan"><img class="main-genplan__bot" src="assets/images/about-bot.png" alt=""><img class="main-genplan__img" src="assets/images/genplan-img.png" alt="">
               <div class="mycontainer">
-                <div class="main__title">Выберите свой участок</br>в “Аннинских просторах”</div><img src="assets/images/genplan.jpg" alt="">
+                <div class="main__title">Выберите свой участок</br>в “Аннинских просторах”</div>
+                <div class="main-genplan__content"><img src="assets/images/genplan.jpg" alt=""></div>
               </div>
             </div>
           </div><!--<div>
-          <div class="main-location"><img src="assets/images/location-img.png" alt="">
+          <div class="main-location" id="location"><img src="assets/images/location-img.png" alt="">
             <div class="mycontainer">
               <div class="main__title">Расположение посёлка</div>
               <div class="main-location-content">
@@ -285,25 +304,31 @@
               </div>
             </div>
           </div><div>-->		
-          <div class="main-perspective"><img src="assets/images/perspective-img.png" alt="">
+          <div class="main-perspective" id="perspective"><img src="assets/images/perspective-img.png" alt="">
             <div class="mycontainer">
               <div class="main__title">Посёлок и его</br>перспективы</div>
               <div class="main-infrastructure__text">Рядом с посёлком нет никаких опасных предприятий. Вокруг него поля, чуть дальше располагается лес, а в 8 км Шинкарский пруд.Поэтому жизнь здесь благоприятно сказывается на здоровье. Особенно на здоровье детей, которые могут абсолютно безопасно бегать и играть на улице.Вы можете разбить свой сад, с разными видами деревьев, цветов и кустарников. Посадить небольшой огородик, устроить теплицу. Или засадить весь участок газоном. Будьте уверены, на этой земле всё растёт отлично.</div>
               <div class="main-perspective-items">
                 <div class="main-perspective-items-item">
                   <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item1.jpg" alt=""></div>
-                  <div class="main-perspective-items-item__title">Зоны для спорта и отдыха</div>
-                  <div class="main-perspective-items-item__text">В посёлке будут построены детская и спортивная площадки, а также зона отдыха.</div>
+                  <div class="main-perspective-items-item-info">
+                    <div class="main-perspective-items-item__title">Зоны для спорта и отдыха</div>
+                    <div class="main-perspective-items-item__text">В посёлке будут построены детская и спортивная площадки, а также зона отдыха.</div>
+                  </div>
                 </div>
                 <div class="main-perspective-items-item">
                   <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item2.jpg" alt=""></div>
-                  <div class="main-perspective-items-item__title">Красивая ограда</div>
-                  <div class="main-perspective-items-item__text">Красивое ограждение вдоль границы посёлка.</div>
+                  <div class="main-perspective-items-item-info">
+                    <div class="main-perspective-items-item__title">Красивая ограда</div>
+                    <div class="main-perspective-items-item__text">Красивое ограждение вдоль границы посёлка.</div>
+                  </div>
                 </div>
                 <div class="main-perspective-items-item">
                   <div class="main-perspective-items-item__img"><img src="assets/images/perspective-item3.jpg" alt=""></div>
-                  <div class="main-perspective-items-item__title">Парковка для гостей</div>
-                  <div class="main-perspective-items-item__text">Отдельная зона паркинга для гостей поселка.</div>
+                  <div class="main-perspective-items-item-info">
+                    <div class="main-perspective-items-item__title">Парковка для гостей</div>
+                    <div class="main-perspective-items-item__text">Отдельная зона паркинга для гостей поселка.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,11 +337,21 @@
             <div class="mycontainer">
               <div class="main__title">Нам доверяют</div>
               <div class="main-partners-slider">
-                <div class="main-partners-slider-item"><img src="assets/images/partners1.jpg" alt=""></div>
-                <div class="main-partners-slider-item"><img src="assets/images/partners2.jpg" alt=""></div>
-                <div class="main-partners-slider-item"><img src="assets/images/partners3.jpg" alt=""></div>
-                <div class="main-partners-slider-item"><img src="assets/images/partners4.jpg" alt=""></div>
-                <div class="main-partners-slider-item"><img src="assets/images/partners1.jpg" alt=""></div>
+                <div class="main-partners-slider-item">
+                  <div class="main-partners-slider-item__img"><img src="assets/images/partners1.jpg" alt=""></div>
+                </div>
+                <div class="main-partners-slider-item">
+                  <div class="main-partners-slider-item__img"><img src="assets/images/partners2.jpg" alt=""></div>
+                </div>
+                <div class="main-partners-slider-item">
+                  <div class="main-partners-slider-item__img"><img src="assets/images/partners3.jpg" alt=""></div>
+                </div>
+                <div class="main-partners-slider-item">
+                  <div class="main-partners-slider-item__img"><img src="assets/images/partners4.jpg" alt=""></div>
+                </div>
+                <div class="main-partners-slider-item">
+                  <div class="main-partners-slider-item__img"><img src="assets/images/partners1.jpg" alt=""></div>
+                </div>
               </div>
             </div>
           </div>
@@ -358,6 +393,9 @@
             </div>
           </form>
         </div>
+      </div>
+      <div class="toTop"><span>Наверх</span>
+        <div class="toTop_p"></div>
       </div>
       <footer class="footer">
         <div class="footer-col">

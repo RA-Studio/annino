@@ -39,3 +39,15 @@
 		overflow: hidden;
 	}
 }
+
+@include w480{
+	.contacts{
+		> img{
+			display: none;
+		}
+		&__title{
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+}

@@ -41,3 +41,24 @@
 		}
 	}
 }
+
+@include w1024{
+	.stockpage{
+		&__banner{
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@include w480{
+	.stockpage{
+		&__banner{
+			margin-bottom: 20px;
+		}
+		&-content{
+			ul{
+				padding-left: 0;
+			}
+		} 
+	}
+}

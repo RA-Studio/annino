@@ -81,6 +81,24 @@
 					@include bold;
 					color: var(--link);
 					margin-bottom: 10px;
+					display: block;
+					display: -webkit-box;
+					max-width: 100%;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					-o-text-overflow: ellipsis;
+					text-overflow: ellipsis;
+				}
+				&__text{
+					display: block;
+					display: -webkit-box;
+					max-width: 100%;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					-o-text-overflow: ellipsis;
+					text-overflow: ellipsis;
 				}
 				&-bot{
 					display: flex;
@@ -133,4 +151,66 @@
 	width: 43px;
 	height: 35px;
 	display: inline-block;
+}
+
+@include w1024{
+	.news{
+		&-sort{
+			input{
+				width: 250px;
+			}
+		}
+		&-items{
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 20px;
+		}
+	}
+
+	.datetimepicker th.switch, 
+	.datetimepicker .datetimepicker-days th.switch{
+		width: 251px;
+	}
+	.datetimepicker .datetimepicker-days td, 
+	.datetimepicker .datetimepicker-days th {
+		width: 35px;
+	}
+}
+
+@include w480{
+	.news{
+		.title h1{
+			font-size: 24px;
+    	line-height: 28px;
+		}
+		&-sort{
+			margin-top: 0;
+			margin-bottom: 20px;
+			input{
+				width: 100%;
+			}
+		}
+		&-items{
+			grid-template-rows: auto;
+			grid-auto-rows: auto;
+			&-item{
+				flex-direction: column;
+				padding: 0;
+				&__img{
+					margin-right: 0;
+					height: 300px;
+					flex: initial
+				}
+				&-info{
+					padding: 20px;
+					&__title{
+						display: block;
+						margin-bottom: 20px;
+					}
+					&__text{
+						display: none;
+					}
+				}
+			}
+		}
+	}
 }

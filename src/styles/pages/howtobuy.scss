@@ -33,3 +33,29 @@
 		}
 	}
 }
+
+@include w1024{
+	.howtobuy{
+		>img{
+			right: -130px;
+    	top: -170px;
+		}
+		&-content{
+			&-col{
+				max-width: none;
+				padding-right: 0;
+			}
+			&__img{
+				display: none;
+			}
+		}
+	}
+}
+
+@include w480{
+	.howtobuy{
+		>img{
+			display: none;
+		}
+	}
+}
